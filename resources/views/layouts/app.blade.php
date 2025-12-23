@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -37,6 +37,9 @@
                     },
                     backgroundImage: {
                         'grid-pattern': "radial-gradient(circle, #3b49df 1px, transparent 1px)",
+                        'hero-gradient': 'radial-gradient(circle at top left, #1a1b3b 0%, transparent 40%)',
+                        'card-gradient': 'linear-gradient(to bottom right, rgba(255,255,255,0.05), rgba(255,255,255,0.01))',
+                        'blue-glow': 'radial-gradient(circle at center, rgba(59, 59, 255, 0.4) 0%, transparent 70%)',
                     }
                 },
             },
@@ -45,9 +48,10 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-        }::-webkit-scrollbar {
-             width: 8px;
-         }
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
         ::-webkit-scrollbar-track {
             background: transparent;
         }
@@ -62,6 +66,10 @@
             background-size: 40px 40px;
             mask-image: linear-gradient(to bottom, transparent, 10%, black, 90%, transparent);
             -webkit-mask-image: linear-gradient(to bottom, transparent, 5%, black, 90%, transparent);
+        }
+        .dot-pattern {
+            background-image: radial-gradient(#2d3042 1px, transparent 1px);
+            background-size: 20px 20px;
         }
     </style>
 </head>

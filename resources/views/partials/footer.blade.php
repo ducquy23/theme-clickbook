@@ -20,7 +20,7 @@
                 <h4 class="text-white font-bold mb-6">Company</h4>
                 <ul class="space-y-4">
                     <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Products</a></li>
-                    <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Company &amp; Careers</a></li>
+                    <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="/company-careers">Company &amp; Careers</a></li>
                 </ul>
             </div>
             <div>

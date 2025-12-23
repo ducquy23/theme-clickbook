@@ -12,7 +12,7 @@
                 <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="#">Products</a>
                 <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="#">Customers</a>
                 <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="#">Resources</a>
-                <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="#">Company &amp; Careers</a>
+                <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="{{ route('company-careers') }}">Company &amp; Careers</a>
             </div>
             <div class="flex items-center space-x-6">
                 <a class="hidden md:block text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-white transition-colors" href="#">Sign In</a>
