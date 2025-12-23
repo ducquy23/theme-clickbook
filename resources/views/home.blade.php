@@ -5,24 +5,24 @@
     <section class="relative pt-32 pb-20 overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.15] pointer-events-none bg-grid-pattern bg-grid"></div>
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
-            <a class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 text-xs font-medium text-gray-600 dark:text-gray-300 hover:border-primary/50 transition-colors mb-8 backdrop-blur-sm" href="#">
-                <span class="w-4 h-4 bg-gray-800 dark:bg-white text-white dark:text-black rounded-sm flex items-center justify-center text-[10px] font-bold">C</span>
-                Clipbook announces <span class="text-green-600 dark:text-green-400">$3.3 million</span> seed round
-                <span class="material-icons text-xs">arrow_forward</span>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center mt-[120px]">
+            <a class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 text-sm font-medium text-[#F5F6FA] hover:border-primary/50 transition-colors mb-8 backdrop-blur-sm" href="#">
+                <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo" class="w-8 h-7 object-contain"/>
+                Clipbook announces <span class="text-green-600 dark:text-green-400" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">$3.3 million</span> seed round
+                <span class="material-icons text-sm">arrow_forward</span>
             </a>
-            <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
+            <h1 class="text-5xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
                 AI research and analysis for <br/>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-400 dark:from-blue-400 dark:to-indigo-200">public relations</span>
+                <span class="text-white">public relations</span>
             </h1>
-            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Clipbook monitors, aggregates, and analyzes data from over 1 million media and policy sources, surfacing the most actionable intelligence.
+            <p class="text-[rgb(220,220,220)] mb-10 mx-auto leading-relaxed">
+                Clipbook monitors, aggregates, and analyzes data from over 1 million media and policy sources, surfacing the most actionable intelligence
             </p>
             <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-16">
                 <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email"/>
-                <button class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-3 rounded-lg whitespace-nowrap transition-all shadow-lg hover:shadow-primary/50">
+                <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all" href="#">
                     Start Monitoring
-                </button>
+                </a>
             </div>
             <div class="relative rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-surface-dark/50 p-2 shadow-2xl overflow-hidden group">
                 <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
