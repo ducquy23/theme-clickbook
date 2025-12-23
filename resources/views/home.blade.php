@@ -381,10 +381,10 @@
     </section>
 
     <!-- Booking Section -->
-    <section class="py-12 px-4">
-        <div class="max-w-4xl mx-auto rounded-xl overflow-hidden relative bg-blue-600">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-cyan-500 opacity-90"></div>
-            <div class="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+    <section class="py-16 px-6">
+        <div class="max-w-7xl mx-auto rounded-xl overflow-hidden relative" style="background-image: url('{{ asset('assets/images/bg_footer.webp') }}'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0"></div>
+            <div class="relative p-8 md:p-24 flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="flex-1">
                     <h2 class="text-2xl font-bold text-white mb-2">Book time with the Clipbook team.</h2>
                     <p class="text-blue-100 text-xs">
@@ -397,7 +397,7 @@
                         placeholder="Enter email address"
                         type="email"
                     />
-                    <button class="bg-primary hover:bg-blue-600 text-white text-xs font-medium px-4 py-2 rounded shadow-lg transition-colors whitespace-nowrap">
+                    <button class="bg-[linear-gradient(90deg,var(--token-4ebed398-f482-4b77-a964-c1bd6c934963,rgb(53,40,255))_0%,var(--token-e8c658cf-e5b0-41e1-8283-03db0336869c,rgb(32,24,153))_100%)] hover:bg-[linear-gradient(90deg,var(--token-4ebed398-f482-4b77-a964-c1bd6c934963,rgb(53,40,255))_0%,var(--token-e8c658cf-e5b0-41e1-8283-03db0336869c,rgb(32,24,153))_100%)] text-white text-xs font-medium px-4 py-2 rounded shadow-lg transition-colors whitespace-nowrap">
                         Schedule a Demo
                     </button>
                 </div>
