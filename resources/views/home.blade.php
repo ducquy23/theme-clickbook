@@ -11,7 +11,7 @@
                 Clipbook announces <span class="text-green-600 dark:text-green-400" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">$3.3 million</span> seed round
                 <span class="material-icons text-sm">arrow_forward</span>
             </a>
-            <h1 class="text-5xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
+            <h1 class="text-7xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
                 AI research and analysis for <br/>
                 <span class="text-white">public relations</span>
             </h1>
@@ -54,21 +54,21 @@
     <!-- Trusted By Section -->
     <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4">
-                <p class="text-sm font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4 text-base">
+                <p class="font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
                     Trusted by the world's leading communications and public affairs teams.
                 </p>
-                <a class="text-sm font-medium text-gray-900 dark:text-white flex items-center hover:underline" href="#">
-                    See case studies <span class="material-icons text-sm ml-1">arrow_forward</span>
+                <a class="font-medium text-gray-900 dark:text-gray-400 flex items-center hover:underline" href="#">
+                    See case studies <span class="material-icons text-base ml-1">arrow_forward</span>
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert">
-                <div class="font-serif font-bold text-xl tracking-widest">CENTER FOR</div>
-                <div class="font-sans font-bold text-2xl tracking-tighter">BCG</div>
-                <div class="font-mono text-lg uppercase tracking-widest border-b-2 border-current pb-1">FRONTWOOD</div>
-                <div class="font-sans font-bold text-xl flex items-center gap-1"><span class="w-4 h-4 bg-current rounded-full"></span> OneMain</div>
-                <div class="flex items-center gap-2 text-left text-xs font-semibold leading-tight"><div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center">S</div>State of<br/>Delaware</div>
-                <div class="font-serif font-bold text-xl">ABR</div>
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert text-[#63636A]">
+                <div class="font-serif font-bold text-2xl tracking-widest">CENTER FOR</div>
+                <div class="font-sans font-bold text-3xl tracking-tighter">BCG</div>
+                <div class="font-mono text-xl uppercase tracking-widest border-b-2 border-current pb-1">FRONTWOOD</div>
+                <div class="font-sans font-bold text-2xl flex items-center gap-1"><span class="w-4 h-4 bg-current rounded-full"></span> OneMain</div>
+                <div class="flex items-center gap-2 text-left text-sm font-semibold leading-tight"><div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center">S</div>State of<br/>Delaware</div>
+                <div class="font-serif font-bold text-2xl">ABR</div>
             </div>
         </div>
     </section>
