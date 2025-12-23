@@ -79,16 +79,17 @@
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden relative">
                 <div class="flex-1 relative z-10">
                     <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block">Media Intelligence</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    <h2 class="text-2xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
                         Automate Research. <br/> Accelerate Growth.
                     </h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-6 leading-relaxed">
+                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
                         Monitor over 1 million sources across news, TV, radio, social media, podcasts, and policy - all in one platform.
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
                         Clipbook's agentic AI goes beyond simple keyword tracking to predictively surface the most relevant, actionable moments, delivering a precise, relevant, and context-rich briefing tailored to your team's needs.
                     </p>
-                    <a class="inline-block px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
+
+                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]   hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
                         Learn More
                     </a>
                 </div>
@@ -149,16 +150,18 @@
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
                     <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block">Reporting</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    <h2 class="text-3xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
                         Track Comprehensively. <br/> Get Customized Intelligence.
                     </h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-6 leading-relaxed">
+                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
                         Track any stakeholder, topic, or geography. Get tailored, noise-free reports built for your team's goals.
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+
+                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
                         Our platform automatically filters out irrelevant content, ranks insights by importance, and formats reports visually to align perfectly with your team's objectives.
                     </p>
-                    <a class="inline-block px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
+
+                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
                         Learn More
                     </a>
                 </div>
@@ -218,16 +221,19 @@
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
                     <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block">Analysis</span>
-                    <h2 class="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+                    <h2 class="text-3xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
                         Unlock Insights. Understand Impact.
                     </h2>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-6 leading-relaxed">
+
+                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
                         Generate detailed analytics on readership, share of voice, sentiment, earned media value, engagement metrics, and more.
                     </p>
-                    <p class="text-gray-600 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+
+                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
                         Our natural language prompts and AI data visualization engine makes it effortless to surface the key metrics that matter most to your team or clients.
                     </p>
-                    <a class="inline-block px-6 py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
+
+                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
                         Learn More
                     </a>
                 </div>
@@ -302,6 +308,98 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Database Section -->
+    <section class="py-24 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
+                <div class="flex-1 relative z-10">
+                    <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block">Database</span>
+                    <h2 class="text-3xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
+                        Centralize Content. <br/> Search with Precision.
+                    </h2>
+                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
+                        Access a dynamic, searchable archive of all your media, policy, and social content. Your custom media database automatically tags and organizes content by stakeholder, topic, or region - to surface exactly what you need, when you need it.
+                    </p>
+
+                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium" href="#">
+                        Learn More
+                    </a>
+                </div>
+                <div class="flex-1 w-full relative">
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
+                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
+                        <div class="absolute top-0 left-10 right-10 h-2 bg-gray-200 dark:bg-gray-700 rounded-t-lg opacity-50"></div>
+                        <div class="absolute top-2 left-6 right-6 h-2 bg-gray-300 dark:bg-gray-600 rounded-t-lg opacity-70"></div>
+                        <div class="bg-white dark:bg-[#151725] rounded-t-lg p-6 min-h-[400px]">
+                            <div class="flex items-center gap-2 mb-4 text-gray-500 dark:text-gray-400 text-sm">
+                                <span>Sent from Clipbook</span>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-gray-400 text-sm py-1">Sent to:</span>
+                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
+                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQyL5Q3skVGmRUgRce9tMVM48EZgQ9f6HAIv-gq5wz5ne0-PiF6rbNJi3J9V5dmZ9eV7o9K3QaS1hMfDTd-Oe5XFQb-c4u9SoXWOCk2zmgr8OiigoxZuYZfDkrXDcIUDJwuRDt2uWBhsGZ6Dn277af4uklfoQzp25zyvPe9YnYF1upS7cjHCYhMSXauWvLhxkjdo8vmKN4LVL8n6mSWJuch3dXC1VsOYLnbz8rAv002TwKL3Wxo1RFgpOy5iyV318QKYDhyV0tx0"/>
+                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Kara CEO</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
+                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv-SxDWmlRY6kndOqr_h67IHPquUzeW9tprfT1MWMIDdOiGD2oo_O4Z-hUkjC7h6I2KRNyDwdQgPichKrXG8UlEc-YaKhCQ1VZgq2JKYQ9KoFwEGi5blDCzfgyhhIhPAf7c-Oewlf8xa3mlsRnsSTik5cACuMJ895BA5Ebv7QerAucRbduB_y1UVwtUn1F07yGfwrG2E7AHJYMAEqVrGP2gFHvJaF8Jn_1kQnNqHwhpkod57xVdS37e6_5ovRB3Ez4PVPeLVc4XY"/>
+                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Amy VP</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
+                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPX3XnEAhu9VJLWSilTzz86kEAHHAJLMs2Br-sAo__IbW9ATsAVdc8er-aPgIyWIsLfvZHvPE696CQCAMVQahnT1Lpr_ukDE94c2SrJakjZZNt9KREDyXPfCdPlZm3AyhHGAtQHgMo-aivtwGesssON5y_SMQjAQd2MR0JnE4i5QxDhv1yIjMTf8Y7-SDfiskD_iYEbCea6EQJ3M083w6KfjE4o3qcWsJp-uvxw8ITvYUy44alrlOJIYHdrMo2azzJ1YYqMnc6laM"/>
+                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Devin COO</span>
+                                </div>
+                            </div>
+                            <hr class="border-gray-200 dark:border-gray-700 mb-6"/>
+                            <div class="flex items-center gap-2 mb-4">
+                                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm">C</div>
+                                <span class="font-bold text-lg text-gray-900 dark:text-white">Clipbook</span>
+                            </div>
+                            <div class="bg-gray-100 dark:bg-gray-800/50 rounded p-3 mb-6 flex justify-between items-center">
+                                <span class="text-xs font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Today's Report</span>
+                                <span class="text-xs text-gray-500">7:22 AM</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Good Morning,</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Here is your intelligence report for today</p>
+                            <div class="bg-gray-50 dark:bg-[#1e2030] rounded-lg p-4 border border-gray-200 dark:border-gray-700">
+                                <div class="flex justify-between items-center mb-3">
+                                    <span class="font-serif font-bold text-gray-800 dark:text-gray-200 text-xs">Liberty Tribune</span>
+                                    <span class="text-[10px] text-gray-400">Monday, Oct 16</span>
+                                </div>
+                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding</h4>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 leading-snug">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto rounded-xl overflow-hidden relative bg-blue-600">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-cyan-500 opacity-90"></div>
+            <div class="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex-1">
+                    <h2 class="text-2xl font-bold text-white mb-2">Book time with the Clipbook team.</h2>
+                    <p class="text-blue-100 text-xs">
+                        See how the leading public relations, communications, and government affairs teams use Clipbook.
+                    </p>
+                </div>
+                <div class="flex w-full md:w-auto bg-black/30 rounded p-1">
+                    <input
+                        class="bg-transparent border-none text-white placeholder-gray-400 text-sm focus:ring-0 w-full md:w-64 px-3"
+                        placeholder="Enter email address"
+                        type="email"
+                    />
+                    <button class="bg-primary hover:bg-blue-600 text-white text-xs font-medium px-4 py-2 rounded shadow-lg transition-colors whitespace-nowrap">
+                        Schedule a Demo
+                    </button>
                 </div>
             </div>
         </div>
