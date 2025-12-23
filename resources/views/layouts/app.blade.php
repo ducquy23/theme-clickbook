@@ -73,6 +73,7 @@
             background-size: 20px 20px;
         }
     </style>
+    @stack('styles')
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">
 @include('partials.header')
