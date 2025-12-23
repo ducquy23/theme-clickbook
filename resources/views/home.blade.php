@@ -5,7 +5,7 @@
     <section class="relative pt-32 pb-20 overflow-hidden">
         <div class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.15] pointer-events-none bg-grid-pattern bg-grid"></div>
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center mt-[120px]">
+        <div class="relative z-10 max-w-6xl mx-auto px-4 text-center mt-[120px]">
             <a class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 text-sm font-medium text-[#F5F6FA] hover:border-primary/50 transition-colors mb-8 backdrop-blur-sm" href="#">
                 <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo" class="w-8 h-7 object-contain"/>
                 Clipbook announces <span class="text-green-600 dark:text-green-400" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">$3.3 million</span> seed round
