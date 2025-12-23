@@ -24,24 +24,28 @@
                     Start Monitoring
                 </a>
             </div>
-            <div class="relative rounded-xl border border-gray-200 dark:border-gray-800 bg-gray-50 dark:bg-surface-dark/50 p-2 shadow-2xl overflow-hidden group">
-                <div class="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-                    <div class="w-20 h-20 bg-white/10 dark:bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center border border-white/20 shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                        <span class="material-icons text-white text-5xl ml-2">play_arrow</span>
+            <div class="framer-xp41rj" data-framer-appear-id="xp41rj" data-framer-name="Hero-image" id="hero-video" style="will-change: transform; opacity: 1; transform: scale(1.03228);">
+                <div class="ssr-variant hidden-f6bbzy">
+                    <div class="framer-13qwumg-container">
+                        <div class="framer-FBK81 framer-2w75lq framer-v-2w75lq hover" style="height: 100%; width: 100%; border-radius: 10px; opacity: 1;">
+                            <div class="framer-6jkvxi-container" style="opacity: 1;">
+                                <video
+                                    src="https://framerusercontent.com/assets/FrobVqucBfLyIYdCwmeBzxWPk.mp4"
+                                    loop
+                                    preload="metadata"
+                                    poster="https://framerusercontent.com/images/UokH1Igxry9vYbJrvEsqJpGOv0.png?width=4056&amp;height=2281"
+                                    controls
+                                    playsinline
+                                    style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%">
+                                </video>
+                            </div>
+                            <div class="framer-66a32j-container" style="opacity: 1; transform: translate(-50%, -50%) scale(0.923534, 0.923534); will-change: transform; transform-origin: 50% 50% 0px;">
+                                <div class="framer-JjNbp framer-1aailqk framer-v-1aailqk" data-border="true" data-framer-name="Play" data-highlight="true" tabindex="0" style="--border-bottom-width: 1px; --border-color: rgb(64, 64, 64); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.32); height: 100%; width: 100%; border-radius: 49.9752% / 49.9752%; transform: scale(1.0828, 1.0828) scale(0.923534, 0.923534); transform-origin: 50% 50% 0px;">
+                                    <div class="framer-58avS framer-1c6ph31" style="--1df8v9o: rgb(255, 255, 255); transform: translate(-50%, -50%) scale(1.0828, 1.0828) scale(1, 1); transform-origin: 50% 50% 0px;"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <img alt="Dashboard Analytics" class="w-full rounded-lg shadow-inner opacity-90 dark:opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL6gbmZ82rCrcYFh8HN-ge2od8yc5wJjIoyzueF3O7vSZr-lFR7bebXplMGOSn29U0Mh0dNT48yZdzZshXWGnTMn9yyl1qwHKQavTHi7lMHE_o4CSluP9afARKlWjGKqSHU9xdNoPQdKLnNzCmU8JjrzlrajSpQvYUYZXuoft3-YOqDJ5c8f8b6EOidLJHxubVv2iYS9jC1ybOE_5RZop1jHgb9oX6IrsO-ei2yg1UgXIFYeoVSF_Xw_RXbhziLzCz-49KV8lEosw"/>
-                <div class="absolute bottom-4 left-4 right-4 h-12 bg-black/60 backdrop-blur-md rounded-lg flex items-center px-4 justify-between text-white text-xs z-20 border border-white/10">
-                    <div class="flex items-center gap-4">
-                        <span class="material-icons text-base cursor-pointer">play_arrow</span>
-                        <span>0:00 / 1:09</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="material-icons text-base cursor-pointer">volume_up</span>
-                        <span class="material-icons text-base cursor-pointer">fullscreen</span>
-                        <span class="material-icons text-base cursor-pointer">more_vert</span>
-                    </div>
-                    <div class="absolute bottom-0 left-0 h-1 bg-primary w-1/3 rounded-bl-lg"></div>
                 </div>
             </div>
         </div>
