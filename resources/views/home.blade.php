@@ -106,28 +106,33 @@
                 <div class="flex-1 w-full relative">
                     <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
                     <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
-                        <div class="space-y-4">
-                            <div class="flex justify-center">
-                                <img src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto" />
+                        <div class="space-y-4 relative">
+                            <div class="flex justify-center relative">
+                                <img id="media-image" src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                <button id="media-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                         <div class="mt-6 flex gap-2 overflow-x-auto p-2 scrollbar-hide bg-[rgb(34,36,52)] rounded-[21px] opacity-100">
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-800 text-white text-xs font-medium flex items-center gap-1">
+                            <span data-category="news" class="category-pill active px-3 py-1 rounded-full cursor-pointer bg-gray-800 text-white text-xs font-medium flex items-center gap-1">
                                 <span class="material-icons text-[10px]">article</span> News
                             </span>
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                            <span data-category="social" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
                                 <span class="material-icons text-[10px]">share</span> Social
                             </span>
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                            <span data-category="policy" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
                                 <span class="material-icons text-[10px]">gavel</span> Policy
                             </span>
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                            <span data-category="broadcasts" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
                                 <span class="material-icons text-[10px]">tv</span> Broadcasts
                             </span>
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                            <span data-category="podcasts" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
                                 <span class="material-icons text-[10px]">podcasts</span> Podcasts
                             </span>
-                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                            <span data-category="newsletters" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
                                 <span class="material-icons text-[10px]">email</span> Newsletters
                             </span>
                         </div>
@@ -375,6 +380,60 @@
 
     <!-- Booking Section -->
     @include('partials.booking-section')
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categories = ['news', 'social', 'policy', 'broadcasts', 'podcasts', 'newsletters'];
+            const images = {
+                'news': 'https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024',
+                'social': 'https://framerusercontent.com/images/yXqiDPeFWT2cIwkbhKylcuVaX0.png?scale-down-to=1024',
+                'policy': 'https://framerusercontent.com/images/Gq520mpoLjGbAXHWrH5Bpfs7s.png?scale-down-to=1024',
+                'broadcasts': 'https://framerusercontent.com/images/A8C6UEwecpNQopvPRUDKWEqV08c.png?scale-down-to=1024',
+                'podcasts': 'https://framerusercontent.com/images/47PaIaQJPmkfuEXD6AF8HtEwtw.png?scale-down-to=1024',
+                'newsletters': 'https://framerusercontent.com/images/zLdXAsoqcFKwSzysvEogJVXWyVo.png?scale-down-to=1024'
+            };
+            
+            let currentIndex = 0;
+            const imageElement = document.getElementById('media-image');
+            const nextButton = document.getElementById('media-next-btn');
+            const pills = document.querySelectorAll('.category-pill');
+            
+            function updateActiveCategory(index) {
+                // Remove active class from all pills
+                pills.forEach(pill => {
+                    pill.classList.remove('active');
+                    pill.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
+                    pill.classList.remove('bg-gray-800', 'text-white');
+                });
+                
+                // Add active class to current pill
+                const currentPill = pills[index];
+                currentPill.classList.add('active', 'bg-gray-800', 'text-white');
+                currentPill.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
+                
+                // Update image
+                const currentCategory = categories[index];
+                imageElement.style.opacity = '0';
+                setTimeout(() => {
+                    imageElement.src = images[currentCategory];
+                    imageElement.style.opacity = '1';
+                }, 150);
+            }
+            
+            nextButton.addEventListener('click', function() {
+                currentIndex = (currentIndex + 1) % categories.length;
+                updateActiveCategory(currentIndex);
+            });
+            
+            // Allow clicking on pills directly
+            pills.forEach((pill, index) => {
+                pill.addEventListener('click', function() {
+                    currentIndex = index;
+                    updateActiveCategory(currentIndex);
+                });
+            });
+        });
+    </script>
 
 @endsection
 
