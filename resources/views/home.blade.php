@@ -388,7 +388,7 @@
                     </svg>
                 </button>
 
-                <div class="relative mx-auto" style="width: 800px; height: 440px;">
+                <div class="relative mx-auto w-full max-w-[800px] h-[280px] sm:h-[320px] md:h-[360px] lg:h-[440px]" style="max-width: 800px;">
                     <div id="customer-stage" class="relative h-full">
                         <!-- Slide 1 -->
                         <div
