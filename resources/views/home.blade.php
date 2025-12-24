@@ -105,7 +105,7 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
+                    <div class="relative rounded-xl">
                         <div class="space-y-4 relative">
                             <div class="flex justify-center relative">
                                 <img id="media-image" src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto transition-opacity duration-300" />
