@@ -176,6 +176,7 @@
                 </div>
             </div>
         </div>
+        @include('partials.book-time')
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-10 text-white">Webinars</h2>
             <div class="flex flex-col items-center gap-4 mb-12">
