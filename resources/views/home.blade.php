@@ -321,7 +321,7 @@
 
     <!-- Database Section -->
     <section id="database" class="relative" style="padding-top: 6rem; padding-bottom: 2rem;">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
