@@ -3,7 +3,7 @@
     @if (!request()->routeIs('home'))
         @include('partials.announcement-bar')
     @endif
-        <div class="flex items-center h-20">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-20">
             <div class="flex items-center gap-8 flex-1">
                 <a href="{{ route('home') }}">
