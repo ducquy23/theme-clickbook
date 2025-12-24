@@ -381,8 +381,7 @@
                 <!-- Next button -->
                 <button
                     id="customer-next"
-                    class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-20"
-                >
+                    class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-20">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="9 6 15 12 9 18"></polyline>
@@ -397,25 +396,10 @@
                             <div
                                 class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
-                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    src="https://framerusercontent.com/images/EMlbPgxWHvqDBM4UzGGR5l9pCQ.png?scale-down-to=1024&width=7252&height=4026"
                                     alt="Customer use case"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
-                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
-                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
-                                        Communications &amp; Public Relations
-                                    </p>
-                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
-                                        Surface client mentions, trends, and competitor moves to turn insights into
-                                        client strategies.
-                                    </p>
-                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
-                                        Monitor earned media, policy, and digital channels in one place to brief
-                                        executives and clients faster.
-                                    </p>
-                                </div>
                             </div>
                         </div>
 
@@ -425,24 +409,10 @@
                             <div
                                 class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
-                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    src="https://framerusercontent.com/images/9M4KT4I7mZ2KbSOmrutDEJdoxE.png?scale-down-to=1024&width=7251&height=4026"
                                     alt="Customer use case - Public affairs"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
-                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
-                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
-                                        Public Affairs &amp; Policy
-                                    </p>
-                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
-                                        Track regulatory moves and stakeholder sentiment across every key market.
-                                    </p>
-                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
-                                        Give leaders real-time context on legislation, regulators, and advocates shaping
-                                        your agenda.
-                                    </p>
-                                </div>
                             </div>
                         </div>
 
@@ -452,24 +422,10 @@
                             <div
                                 class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
-                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    src="https://framerusercontent.com/images/ZWbVXtVAJJRzJu4BfrDCoHNnBLw.png?scale-down-to=512&width=7251&height=4026"
                                     alt="Customer use case - Enterprise"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div
-                                    class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
-                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
-                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
-                                        Enterprise Communications
-                                    </p>
-                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
-                                        Align global teams on the same media and stakeholder picture.
-                                    </p>
-                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
-                                        Power executive dashboards, daily briefings, and board updates from a single
-                                        intelligence layer.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
