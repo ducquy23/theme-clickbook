@@ -271,6 +271,70 @@
         </div>
     </section>
 
+    <!-- Customer Section -->
+
+    <!-- What our customers are saying Section -->
+    <section class="py-24 bg-background-dark border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">What our customers are saying</h2>
+                <p class="text-gray-400">The world's leading organizations rely on Clipbook as their team's intelligence
+                    foundation.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div
+                    class="bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-black text-gray-200 text-lg uppercase">American<br />Prairie</div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has made monitoring press and mentions easier
+                            than ever. I look forward to seeing it in my inbox every morning!"</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Beth Saboe</div>
+                        <div class="text-gray-500 text-xs">Senior Public Relations Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-serif italic text-gray-200 text-xl">Frontwood <span
+                                class="block text-xs not-italic font-sans text-gray-500 tracking-widest uppercase">Strategies</span>
+                        </div>
+                        <p class="text-gray-300 italic mb-6">"Our clients see enterprise-grade media insights from a
+                            boutique firm. We're able to punch above our weight because of Clipbook."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Neil Callahan</div>
+                        <div class="text-gray-500 text-xs">Founder</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-4 mt-8">
+                <button
+                    class="w-10 h-10 rounded border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500">
+                    <span class="material-icons text-sm">arrow_back</span>
+                </button>
+                <button
+                    class="w-10 h-10 rounded border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500">
+                    <span class="material-icons text-sm">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
     <!-- Booking Section -->
     @include('partials.booking-section')
 
