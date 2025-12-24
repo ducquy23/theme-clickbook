@@ -170,46 +170,22 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
-                        <div class="absolute top-0 left-10 right-10 h-2 bg-gray-200 dark:bg-gray-700 rounded-t-lg opacity-50"></div>
-                        <div class="absolute top-2 left-6 right-6 h-2 bg-gray-300 dark:bg-gray-600 rounded-t-lg opacity-70"></div>
-                        <div class="bg-white dark:bg-[#151725] rounded-t-lg p-6 min-h-[400px]">
-                            <div class="flex items-center gap-2 mb-4 text-gray-500 dark:text-gray-400 text-sm">
-                                <span>Sent from Clipbook</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="text-gray-400 text-sm py-1">Sent to:</span>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQyL5Q3skVGmRUgRce9tMVM48EZgQ9f6HAIv-gq5wz5ne0-PiF6rbNJi3J9V5dmZ9eV7o9K3QaS1hMfDTd-Oe5XFQb-c4u9SoXWOCk2zmgr8OiigoxZuYZfDkrXDcIUDJwuRDt2uWBhsGZ6Dn277af4uklfoQzp25zyvPe9YnYF1upS7cjHCYhMSXauWvLhxkjdo8vmKN4LVL8n6mSWJuch3dXC1VsOYLnbz8rAv002TwKL3Wxo1RFgpOy5iyV318QKYDhyV0tx0"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Kara CEO</span>
+                    <div class="relative dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
+                        <div class="">
+                            <div class="space-y-4 relative">
+                                <div class="flex justify-center relative">
+                                    <img id="reporting-image" src="https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056" alt="Reporting Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                    <button id="reporting-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                        </svg>
+                                    </button>
+                                    <button id="reporting-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv-SxDWmlRY6kndOqr_h67IHPquUzeW9tprfT1MWMIDdOiGD2oo_O4Z-hUkjC7h6I2KRNyDwdQgPichKrXG8UlEc-YaKhCQ1VZgq2JKYQ9KoFwEGi5blDCzfgyhhIhPAf7c-Oewlf8xa3mlsRnsSTik5cACuMJ895BA5Ebv7QerAucRbduB_y1UVwtUn1F07yGfwrG2E7AHJYMAEqVrGP2gFHvJaF8Jn_1kQnNqHwhpkod57xVdS37e6_5ovRB3Ez4PVPeLVc4XY"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Amy VP</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPX3XnEAhu9VJLWSilTzz86kEAHHAJLMs2Br-sAo__IbW9ATsAVdc8er-aPgIyWIsLfvZHvPE696CQCAMVQahnT1Lpr_ukDE94c2SrJakjZZNt9KREDyXPfCdPlZm3AyhHGAtQHgMo-aivtwGesssON5y_SMQjAQd2MR0JnE4i5QxDhv1yIjMTf8Y7-SDfiskD_iYEbCea6EQJ3M083w6KfjE4o3qcWsJp-uvxw8ITvYUy44alrlOJIYHdrMo2azzJ1YYqMnc6laM"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Devin COO</span>
-                                </div>
-                            </div>
-                            <hr class="border-gray-200 dark:border-gray-700 mb-6"/>
-                            <div class="flex items-center gap-2 mb-4">
-                                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm">C</div>
-                                <span class="font-bold text-lg text-gray-900 dark:text-white">Clipbook</span>
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-800/50 rounded p-3 mb-6 flex justify-between items-center">
-                                <span class="text-xs font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Today's Report</span>
-                                <span class="text-xs text-gray-500">7:22 AM</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Good Morning,</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Here is your intelligence report for today</p>
-                            <div class="bg-gray-50 dark:bg-[#1e2030] rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="font-serif font-bold text-gray-800 dark:text-gray-200 text-xs">Liberty Tribune</span>
-                                    <span class="text-[10px] text-gray-400">Monday, Oct 16</span>
-                                </div>
-                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 leading-snug">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone...</p>
                             </div>
                         </div>
                     </div>
@@ -241,73 +217,21 @@
                     </a>
                 </div>
                 <div class="flex-1 w-full relative">
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="w-6 h-6 bg-blue-600 rounded text-white flex items-center justify-center font-bold text-xs">C</div>
-                            <div class="flex gap-2">
-                                <button class="w-6 h-6 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 hover:text-gray-900 dark:hover:text-white"><span class="material-icons text-sm">chevron_left</span></button>
-                                <button class="w-6 h-6 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 hover:text-gray-900 dark:hover:text-white"><span class="material-icons text-sm">chevron_right</span></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div class="bg-gray-50 dark:bg-[#151725] rounded p-4 border border-gray-100 dark:border-gray-800">
-                                <div class="flex justify-between text-[10px] text-gray-400 mb-4 uppercase tracking-wider font-semibold">
-                                    <span>Readership</span>
-                                    <span>Past 30D</span>
-                                </div>
-                                <div class="h-24 flex items-end justify-between gap-1 px-1">
-                                    <div class="w-1 bg-indigo-500 h-1/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/2 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/5 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-3/4 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/4 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-full rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/2 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/5 rounded-t-sm"></div>
-                                </div>
-                            </div>
-                            <div class="bg-gray-50 dark:bg-[#151725] rounded p-4 border border-gray-100 dark:border-gray-800 relative">
-                                <div class="flex justify-between text-[10px] text-gray-400 mb-4 uppercase tracking-wider font-semibold">
-                                    <span>Breakdown</span>
-                                    <span>4 Sources</span>
-                                </div>
-                                <div class="flex items-center justify-center h-24">
-                                    <div class="w-20 h-20 rounded-full border-[6px] border-indigo-600 border-l-blue-800 border-b-blue-900 transform rotate-45 flex items-center justify-center relative">
-                                        <div class="absolute inset-0 flex flex-col items-center justify-center transform -rotate-45">
-                                            <span class="text-sm font-bold text-gray-900 dark:text-white leading-none">55%</span>
-                                            <span class="text-[8px] text-gray-500">Print</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="flex gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-wide border-b border-gray-100 dark:border-gray-800 pb-2 mb-2">
-                                <span class="text-white bg-gray-800 px-2 py-0.5 rounded">Positive Sentiment</span>
-                                <span>Neutral</span>
-                                <span>Negative</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-24 bg-gray-900 rounded px-2 py-1.5 flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                    <span class="text-xs text-white font-medium">83% Positive</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h5 class="text-xs font-bold text-gray-900 dark:text-white">The Future of AI with Mark Cuban</h5>
-                                    <p class="text-[10px] text-gray-500">354k impressions • 6 articles</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-24 bg-gray-900 rounded px-2 py-1.5 flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                    <span class="text-xs text-white font-medium">77% Positive</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h5 class="text-xs font-bold text-gray-900 dark:text-white">Recent comments on NBA</h5>
-                                    <p class="text-[10px] text-gray-500">120k impressions • 2 articles</p>
-                                </div>
+                    <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-xl">
+                        <div class="space-y-4 relative">
+                            <div class="flex justify-center relative">
+                                <img id="analysis-image" src="https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120" alt="Analysis Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                <button id="analysis-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button id="analysis-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -397,16 +321,16 @@
                 'podcasts': 'https://framerusercontent.com/images/47PaIaQJPmkfuEXD6AF8HtEwtw.png?scale-down-to=1024',
                 'newsletters': 'https://framerusercontent.com/images/zLdXAsoqcFKwSzysvEogJVXWyVo.png?scale-down-to=1024'
             };
-            
+
             let currentIndex = 0;
             const imageElement = document.getElementById('media-image');
             const nextButton = document.getElementById('media-next-btn');
             const prevButton = document.getElementById('media-prev-btn');
             const pills = document.querySelectorAll('.category-pill');
-            
+
             function updateButtonVisibility(index) {
                 const totalCategories = categories.length;
-                
+
                 // Ẩn/hiện nút previous
                 if (index === 0) {
                     // Category đầu tiên: ẩn previous
@@ -415,7 +339,7 @@
                     // Các category khác: hiện previous
                     prevButton.classList.remove('hidden');
                 }
-                
+
                 // Ẩn/hiện nút next
                 if (index === totalCategories - 1) {
                     // Category cuối: ẩn next
@@ -425,7 +349,7 @@
                     nextButton.classList.remove('hidden');
                 }
             }
-            
+
             function updateActiveCategory(index) {
                 // Remove active class from all pills
                 pills.forEach(pill => {
@@ -433,12 +357,12 @@
                     pill.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
                     pill.classList.remove('bg-gray-800', 'text-white');
                 });
-                
+
                 // Add active class to current pill
                 const currentPill = pills[index];
                 currentPill.classList.add('active', 'bg-gray-800', 'text-white');
                 currentPill.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
-                
+
                 // Update image
                 const currentCategory = categories[index];
                 imageElement.style.opacity = '0';
@@ -446,25 +370,25 @@
                     imageElement.src = images[currentCategory];
                     imageElement.style.opacity = '1';
                 }, 150);
-                
+
                 // Update button visibility
                 updateButtonVisibility(index);
             }
-            
+
             nextButton.addEventListener('click', function() {
                 if (currentIndex < categories.length - 1) {
                     currentIndex++;
                     updateActiveCategory(currentIndex);
                 }
             });
-            
+
             prevButton.addEventListener('click', function() {
                 if (currentIndex > 0) {
                     currentIndex--;
                     updateActiveCategory(currentIndex);
                 }
             });
-            
+
             // Allow clicking on pills directly
             pills.forEach((pill, index) => {
                 pill.addEventListener('click', function() {
@@ -472,9 +396,105 @@
                     updateActiveCategory(currentIndex);
                 });
             });
-            
+
             // Initialize button visibility
             updateButtonVisibility(0);
+        });
+
+        // Reporting Section Carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const reportingImages = [
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056'
+            ];
+
+            let reportingCurrentIndex = 0;
+            const reportingImageElement = document.getElementById('reporting-image');
+            const reportingNextButton = document.getElementById('reporting-next-btn');
+            const reportingPrevButton = document.getElementById('reporting-prev-btn');
+
+            function updateReportingButtonVisibility(index) {
+                const totalImages = reportingImages.length;
+
+                // Ẩn/hiện nút previous
+                if (index === 0) {
+                    reportingPrevButton.classList.add('hidden');
+                } else {
+                    reportingPrevButton.classList.remove('hidden');
+                }
+
+                // Ẩn/hiện nút next
+                if (index === totalImages - 1) {
+                    reportingNextButton.classList.add('hidden');
+                } else {
+                    reportingNextButton.classList.remove('hidden');
+                }
+            }
+
+            function updateReportingImage(index) {
+                reportingImageElement.style.opacity = '0';
+                setTimeout(() => {
+                    reportingImageElement.src = reportingImages[index];
+                    reportingImageElement.style.opacity = '1';
+                }, 150);
+                updateReportingButtonVisibility(index);
+            }
+
+            reportingNextButton.addEventListener('click', function() {
+                if (reportingCurrentIndex < reportingImages.length - 1) {
+                    reportingCurrentIndex++;
+                    updateReportingImage(reportingCurrentIndex);
+                }
+            });
+
+            reportingPrevButton.addEventListener('click', function() {
+                if (reportingCurrentIndex > 0) {
+                    reportingCurrentIndex--;
+                    updateReportingImage(reportingCurrentIndex);
+                }
+            });
+
+            // Initialize button visibility
+            updateReportingButtonVisibility(0);
+        });
+
+        // Analysis Section Carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const analysisImages = [
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120'
+            ];
+
+            let analysisCurrentIndex = 0;
+            const analysisImageElement = document.getElementById('analysis-image');
+            const analysisNextButton = document.getElementById('analysis-next-btn');
+            const analysisPrevButton = document.getElementById('analysis-prev-btn');
+
+            function updateAnalysisImage(index) {
+                analysisImageElement.style.opacity = '0';
+                setTimeout(() => {
+                    analysisImageElement.src = analysisImages[index];
+                    analysisImageElement.style.opacity = '1';
+                }, 150);
+            }
+
+            // Luôn hiển thị cả 2 nút
+            analysisPrevButton.classList.remove('hidden');
+            analysisNextButton.classList.remove('hidden');
+
+            analysisNextButton.addEventListener('click', function() {
+                analysisCurrentIndex = (analysisCurrentIndex + 1) % analysisImages.length;
+                updateAnalysisImage(analysisCurrentIndex);
+            });
+
+            analysisPrevButton.addEventListener('click', function() {
+                analysisCurrentIndex = (analysisCurrentIndex - 1 + analysisImages.length) % analysisImages.length;
+                updateAnalysisImage(analysisCurrentIndex);
+            });
         });
     </script>
 
