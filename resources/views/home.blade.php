@@ -356,7 +356,7 @@
     </section>
 
     <!-- Customer Section -->
-    <section class="py-24 bg-background-dark border-t border-gray-900">
+    <section class="py-24">
         <div class="w-full px-4 sm:px-8 lg:px-16">
             <div class="text-center mb-12 max-w-screen-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our customers</h2>
