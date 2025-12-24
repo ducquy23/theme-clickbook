@@ -72,6 +72,17 @@
             background-image: radial-gradient(#2d3042 1px, transparent 1px);
             background-size: 20px 20px;
         }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .animate-scroll {
+            animation: scroll 15s linear infinite;
+        }
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">

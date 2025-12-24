@@ -63,13 +63,22 @@
                 </a>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert">
-                <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain"/>
-                <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
-                <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
-                <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
-                <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
-                <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+            <div class="overflow-hidden">
+                <div class="flex gap-8 items-center animate-scroll opacity-60 grayscale dark:invert">
+                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <!-- Duplicate for seamless loop -->
+                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                </div>
             </div>
         </div>
     </section>
