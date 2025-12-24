@@ -19,8 +19,8 @@
                 Clipbook monitors, aggregates, and analyzes data from over 1 million media and policy sources, surfacing the most actionable intelligence
             </p>
             <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-16">
-                <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email"/>
-                <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all" href="#">
+                <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email" style="width: 440px;"/>
+                <a class="block rounded-lg p-3 pl-5 pr-5 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all text-sm" href="#">
                     Start Monitoring
                 </a>
             </div>
@@ -42,9 +42,9 @@
                             <div class="framer-66a32j-container" style="opacity: 1; transform: translate(-50%, -50%) scale(0.923534, 0.923534); will-change: transform; transform-origin: 50% 50% 0px;">
                                 <div class="framer-JjNbp framer-1aailqk framer-v-1aailqk" data-border="true" data-framer-name="Play" data-highlight="true" tabindex="0" style="--border-bottom-width: 1px; --border-color: rgb(64, 64, 64); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.32); height: 100%; width: 100%; border-radius: 49.9752% / 49.9752%; transform: scale(1.0828, 1.0828) scale(0.923534, 0.923534); transform-origin: 50% 50% 0px;">
                                     <div class="framer-58avS framer-1c6ph31" style="--1df8v9o: rgb(255, 255, 255); transform: translate(-50%, -50%) scale(1.0828, 1.0828) scale(1, 1); transform-origin: 50% 50% 0px;"></div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -55,26 +55,36 @@
     <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4 text-base">
-                <p class="font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
+                <p class="font-medium" style="color: rgb(220, 220, 220);">
                     Trusted by the world's leading communications and public affairs teams.
                 </p>
-                <a class="font-medium text-gray-900 dark:text-gray-400 flex items-center hover:underline" href="#">
+                <a class="font-medium flex items-center hover:underline" style="color: rgb(220, 220, 220);" href="#">
                     See case studies <span class="material-icons text-base ml-1">arrow_forward</span>
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert text-[#63636A]">
-                <div class="font-serif font-bold text-2xl tracking-widest">CENTER FOR</div>
-                <div class="font-sans font-bold text-3xl tracking-tighter">BCG</div>
-                <div class="font-mono text-xl uppercase tracking-widest border-b-2 border-current pb-1">FRONTWOOD</div>
-                <div class="font-sans font-bold text-2xl flex items-center gap-1"><span class="w-4 h-4 bg-current rounded-full"></span> OneMain</div>
-                <div class="flex items-center gap-2 text-left text-sm font-semibold leading-tight"><div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center">S</div>State of<br/>Delaware</div>
-                <div class="font-serif font-bold text-2xl">ABR</div>
+
+            <div class="overflow-hidden">
+                <div class="flex gap-8 items-center animate-scroll opacity-60 grayscale dark:invert">
+                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <!-- Duplicate for seamless loop -->
+                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                    <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Media Intelligence Section -->
-    <section class="py-24 relative">
+    <section id="mediaintelligence" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden relative">
                 <div class="flex-1 relative z-10">
@@ -95,48 +105,41 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
-                        <div class="space-y-4">
-                            <div class="bg-gray-50 dark:bg-[#1a1d2d] rounded-lg p-4 border border-gray-100 dark:border-gray-700/50 relative overflow-hidden">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-gray-300 dark:bg-gray-600"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Liberty Tribune</span>
-                                    </div>
-                                    <span class="text-[10px] text-gray-400">May 4, 2025 11:23 AM</span>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding in 2025</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone, with key sectors like healthcare...</p>
-                            </div>
-                            <div class="bg-white dark:bg-[#23273a] rounded-lg p-4 border border-blue-500/30 shadow-lg relative z-10 translate-x-2 -translate-y-2 ring-1 ring-blue-500/20">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-orange-400"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Capitol Newswire</span>
-                                    </div>
-                                    <span class="text-[10px] text-gray-400">May 4, 2025 3:35 PM</span>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">AI Adoption Surges: 89% of Small Businesses Now Rely on Artificial Intelligence</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">A wave of digital transformation is sweeping across the business world, with 89% of small businesses already integrating...</p>
-                                <button class="absolute -right-3 top-1/2 -translate-y-1/2 w-8 h-8 bg-gray-900 dark:bg-black rounded-full flex items-center justify-center border border-gray-700">
-                                    <span class="material-icons text-white text-sm">chevron_right</span>
+                    <div class="relative rounded-xl">
+                        <div class="space-y-4 relative">
+                            <div class="flex justify-center relative">
+                                <img id="media-image" src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                <button id="media-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button id="media-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
                                 </button>
                             </div>
-                            <div class="bg-gray-50 dark:bg-[#1a1d2d] rounded-lg p-4 border border-gray-100 dark:border-gray-700/50 relative overflow-hidden opacity-60">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-red-400"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Union Times Media</span>
-                                    </div>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">Federal Agencies Embrace Automation to Boost Transparency</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">New White House policies urge federal agencies to adopt innovative AI solutions...</p>
-                            </div>
                         </div>
-                        <div class="mt-6 flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-                            <span class="px-3 py-1 rounded-full bg-gray-800 text-white text-xs font-medium flex items-center gap-1"><span class="material-icons text-[10px]">article</span> News</span>
-                            <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1"><span class="material-icons text-[10px]">share</span> Social</span>
-                            <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1"><span class="material-icons text-[10px]">gavel</span> Policy</span>
+                        <div class="mt-6 flex gap-2 overflow-x-auto p-2 scrollbar-hide bg-[rgb(34,36,52)] rounded-[21px] opacity-100">
+                            <span data-category="news" class="category-pill active px-3 py-1 rounded-full cursor-pointer bg-gray-800 text-white text-xs font-medium flex items-center gap-1">
+                                <span class="material-icons text-[10px]">article</span> News
+                            </span>
+                            <span data-category="social" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">share</span> Social
+                            </span>
+                            <span data-category="policy" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">gavel</span> Policy
+                            </span>
+                            <span data-category="broadcasts" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">tv</span> Broadcasts
+                            </span>
+                            <span data-category="podcasts" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">podcasts</span> Podcasts
+                            </span>
+                            <span data-category="newsletters" class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">email</span> Newsletters
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -145,7 +148,7 @@
     </section>
 
     <!-- Reporting Section -->
-    <section class="py-24 relative">
+    <section id="reporting" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
@@ -167,46 +170,22 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
-                        <div class="absolute top-0 left-10 right-10 h-2 bg-gray-200 dark:bg-gray-700 rounded-t-lg opacity-50"></div>
-                        <div class="absolute top-2 left-6 right-6 h-2 bg-gray-300 dark:bg-gray-600 rounded-t-lg opacity-70"></div>
-                        <div class="bg-white dark:bg-[#151725] rounded-t-lg p-6 min-h-[400px]">
-                            <div class="flex items-center gap-2 mb-4 text-gray-500 dark:text-gray-400 text-sm">
-                                <span>Sent from Clipbook</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="text-gray-400 text-sm py-1">Sent to:</span>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQyL5Q3skVGmRUgRce9tMVM48EZgQ9f6HAIv-gq5wz5ne0-PiF6rbNJi3J9V5dmZ9eV7o9K3QaS1hMfDTd-Oe5XFQb-c4u9SoXWOCk2zmgr8OiigoxZuYZfDkrXDcIUDJwuRDt2uWBhsGZ6Dn277af4uklfoQzp25zyvPe9YnYF1upS7cjHCYhMSXauWvLhxkjdo8vmKN4LVL8n6mSWJuch3dXC1VsOYLnbz8rAv002TwKL3Wxo1RFgpOy5iyV318QKYDhyV0tx0"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Kara CEO</span>
+                    <div class="relative dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
+                        <div class="">
+                            <div class="space-y-4 relative">
+                                <div class="flex justify-center relative">
+                                    <img id="reporting-image" src="https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056" alt="Reporting Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                    <button id="reporting-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="15 18 9 12 15 6"></polyline>
+                                        </svg>
+                                    </button>
+                                    <button id="reporting-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv-SxDWmlRY6kndOqr_h67IHPquUzeW9tprfT1MWMIDdOiGD2oo_O4Z-hUkjC7h6I2KRNyDwdQgPichKrXG8UlEc-YaKhCQ1VZgq2JKYQ9KoFwEGi5blDCzfgyhhIhPAf7c-Oewlf8xa3mlsRnsSTik5cACuMJ895BA5Ebv7QerAucRbduB_y1UVwtUn1F07yGfwrG2E7AHJYMAEqVrGP2gFHvJaF8Jn_1kQnNqHwhpkod57xVdS37e6_5ovRB3Ez4PVPeLVc4XY"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Amy VP</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPX3XnEAhu9VJLWSilTzz86kEAHHAJLMs2Br-sAo__IbW9ATsAVdc8er-aPgIyWIsLfvZHvPE696CQCAMVQahnT1Lpr_ukDE94c2SrJakjZZNt9KREDyXPfCdPlZm3AyhHGAtQHgMo-aivtwGesssON5y_SMQjAQd2MR0JnE4i5QxDhv1yIjMTf8Y7-SDfiskD_iYEbCea6EQJ3M083w6KfjE4o3qcWsJp-uvxw8ITvYUy44alrlOJIYHdrMo2azzJ1YYqMnc6laM"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Devin COO</span>
-                                </div>
-                            </div>
-                            <hr class="border-gray-200 dark:border-gray-700 mb-6"/>
-                            <div class="flex items-center gap-2 mb-4">
-                                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm">C</div>
-                                <span class="font-bold text-lg text-gray-900 dark:text-white">Clipbook</span>
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-800/50 rounded p-3 mb-6 flex justify-between items-center">
-                                <span class="text-xs font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Today's Report</span>
-                                <span class="text-xs text-gray-500">7:22 AM</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Good Morning,</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Here is your intelligence report for today</p>
-                            <div class="bg-gray-50 dark:bg-[#1e2030] rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="font-serif font-bold text-gray-800 dark:text-gray-200 text-xs">Liberty Tribune</span>
-                                    <span class="text-[10px] text-gray-400">Monday, Oct 16</span>
-                                </div>
-                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 leading-snug">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone...</p>
                             </div>
                         </div>
                     </div>
@@ -216,7 +195,7 @@
     </section>
 
     <!-- Analysis Section -->
-    <section class="py-24 relative">
+    <section id="analysis" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
@@ -238,83 +217,31 @@
                     </a>
                 </div>
                 <div class="flex-1 w-full relative">
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
-                        <div class="flex items-center justify-between mb-6">
-                            <div class="w-6 h-6 bg-blue-600 rounded text-white flex items-center justify-center font-bold text-xs">C</div>
-                            <div class="flex gap-2">
-                                <button class="w-6 h-6 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 hover:text-gray-900 dark:hover:text-white"><span class="material-icons text-sm">chevron_left</span></button>
-                                <button class="w-6 h-6 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 hover:text-gray-900 dark:hover:text-white"><span class="material-icons text-sm">chevron_right</span></button>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div class="bg-gray-50 dark:bg-[#151725] rounded p-4 border border-gray-100 dark:border-gray-800">
-                                <div class="flex justify-between text-[10px] text-gray-400 mb-4 uppercase tracking-wider font-semibold">
-                                    <span>Readership</span>
-                                    <span>Past 30D</span>
-                                </div>
-                                <div class="h-24 flex items-end justify-between gap-1 px-1">
-                                    <div class="w-1 bg-indigo-500 h-1/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/2 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/5 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-3/4 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/4 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-full rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/2 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-1/3 rounded-t-sm"></div>
-                                    <div class="w-1 bg-indigo-500 h-2/5 rounded-t-sm"></div>
-                                </div>
-                            </div>
-                            <div class="bg-gray-50 dark:bg-[#151725] rounded p-4 border border-gray-100 dark:border-gray-800 relative">
-                                <div class="flex justify-between text-[10px] text-gray-400 mb-4 uppercase tracking-wider font-semibold">
-                                    <span>Breakdown</span>
-                                    <span>4 Sources</span>
-                                </div>
-                                <div class="flex items-center justify-center h-24">
-                                    <div class="w-20 h-20 rounded-full border-[6px] border-indigo-600 border-l-blue-800 border-b-blue-900 transform rotate-45 flex items-center justify-center relative">
-                                        <div class="absolute inset-0 flex flex-col items-center justify-center transform -rotate-45">
-                                            <span class="text-sm font-bold text-gray-900 dark:text-white leading-none">55%</span>
-                                            <span class="text-[8px] text-gray-500">Print</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="space-y-3">
-                            <div class="flex gap-4 text-[10px] font-bold text-gray-400 uppercase tracking-wide border-b border-gray-100 dark:border-gray-800 pb-2 mb-2">
-                                <span class="text-white bg-gray-800 px-2 py-0.5 rounded">Positive Sentiment</span>
-                                <span>Neutral</span>
-                                <span>Negative</span>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-24 bg-gray-900 rounded px-2 py-1.5 flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                    <span class="text-xs text-white font-medium">83% Positive</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h5 class="text-xs font-bold text-gray-900 dark:text-white">The Future of AI with Mark Cuban</h5>
-                                    <p class="text-[10px] text-gray-500">354k impressions • 6 articles</p>
-                                </div>
-                            </div>
-                            <div class="flex items-center gap-4">
-                                <div class="w-24 bg-gray-900 rounded px-2 py-1.5 flex items-center gap-2">
-                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                    <span class="text-xs text-white font-medium">77% Positive</span>
-                                </div>
-                                <div class="flex-1">
-                                    <h5 class="text-xs font-bold text-gray-900 dark:text-white">Recent comments on NBA</h5>
-                                    <p class="text-[10px] text-gray-500">120k impressions • 2 articles</p>
-                                </div>
+                    <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
+                    <div class="relative rounded-3xl">
+                        <div class="space-y-4 relative">
+                            <div class="flex justify-center relative">
+                                <img id="analysis-image" src="https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120" alt="Analysis Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                <button id="analysis-prev-btn" class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
+                                <button id="analysis-next-btn" class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                                </div>
+                                </div>
+                            </div>
     </section>
 
     <!-- Database Section -->
-    <section class="py-24 relative">
+    <section id="database" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
@@ -332,46 +259,119 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
-                        <div class="absolute top-0 left-10 right-10 h-2 bg-gray-200 dark:bg-gray-700 rounded-t-lg opacity-50"></div>
-                        <div class="absolute top-2 left-6 right-6 h-2 bg-gray-300 dark:bg-gray-600 rounded-t-lg opacity-70"></div>
-                        <div class="bg-white dark:bg-[#151725] rounded-t-lg p-6 min-h-[400px]">
-                            <div class="flex items-center gap-2 mb-4 text-gray-500 dark:text-gray-400 text-sm">
-                                <span>Sent from Clipbook</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="text-gray-400 text-sm py-1">Sent to:</span>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQyL5Q3skVGmRUgRce9tMVM48EZgQ9f6HAIv-gq5wz5ne0-PiF6rbNJi3J9V5dmZ9eV7o9K3QaS1hMfDTd-Oe5XFQb-c4u9SoXWOCk2zmgr8OiigoxZuYZfDkrXDcIUDJwuRDt2uWBhsGZ6Dn277af4uklfoQzp25zyvPe9YnYF1upS7cjHCYhMSXauWvLhxkjdo8vmKN4LVL8n6mSWJuch3dXC1VsOYLnbz8rAv002TwKL3Wxo1RFgpOy5iyV318QKYDhyV0tx0"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Kara CEO</span>
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                        <img
+                            src="https://framerusercontent.com/images/DEIQaC2ZLch4dnMtJAhKd1mAjHI.png?scale-down-to=1024&width=2764&height=1880"
+                            alt="Database preview"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
                                 </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv-SxDWmlRY6kndOqr_h67IHPquUzeW9tprfT1MWMIDdOiGD2oo_O4Z-hUkjC7h6I2KRNyDwdQgPichKrXG8UlEc-YaKhCQ1VZgq2JKYQ9KoFwEGi5blDCzfgyhhIhPAf7c-Oewlf8xa3mlsRnsSTik5cACuMJ895BA5Ebv7QerAucRbduB_y1UVwtUn1F07yGfwrG2E7AHJYMAEqVrGP2gFHvJaF8Jn_1kQnNqHwhpkod57xVdS37e6_5ovRB3Ez4PVPeLVc4XY"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Amy VP</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPX3XnEAhu9VJLWSilTzz86kEAHHAJLMs2Br-sAo__IbW9ATsAVdc8er-aPgIyWIsLfvZHvPE696CQCAMVQahnT1Lpr_ukDE94c2SrJakjZZNt9KREDyXPfCdPlZm3AyhHGAtQHgMo-aivtwGesssON5y_SMQjAQd2MR0JnE4i5QxDhv1yIjMTf8Y7-SDfiskD_iYEbCea6EQJ3M083w6KfjE4o3qcWsJp-uvxw8ITvYUy44alrlOJIYHdrMo2azzJ1YYqMnc6laM"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Devin COO</span>
+                                        </div>
+                                    </div>
+    </section>
+
+    <!-- Customer Section -->
+    <section class="py-24 bg-background-dark border-t border-gray-900">
+        <div class="w-full px-4 sm:px-8 lg:px-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our customers</h2>
+                <p class="text-gray-400 max-w-3xl mx-auto">
+                    Clipbook is the leading AI research and analysis platform for communications and public affairs teams.
+                </p>
+            </div>
+
+            <div class="relative max-w-6xl mx-auto">
+                <!-- Prev button -->
+                <button
+                    id="customer-prev"
+                    class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-20"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <!-- Next button -->
+                <button
+                    id="customer-next"
+                    class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-20"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="9 6 15 12 9 18"></polyline>
+                    </svg>
+                </button>
+
+                <div class="relative h-[420px] md:h-[460px] lg:h-[500px]">
+                    <div id="customer-stage" class="relative h-full">
+                        <!-- Slide 1 -->
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                <img
+                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    alt="Customer use case"
+                                    class="w-full h-full object-cover opacity-90"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
+                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
+                                        Communications &amp; Public Relations
+                                    </p>
+                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
+                                        Surface client mentions, trends, and competitor moves to turn insights into client strategies.
+                                    </p>
+                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
+                                        Monitor earned media, policy, and digital channels in one place to brief executives and clients faster.
+                                    </p>
                                 </div>
                             </div>
-                            <hr class="border-gray-200 dark:border-gray-700 mb-6"/>
-                            <div class="flex items-center gap-2 mb-4">
-                                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm">C</div>
-                                <span class="font-bold text-lg text-gray-900 dark:text-white">Clipbook</span>
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-800/50 rounded p-3 mb-6 flex justify-between items-center">
-                                <span class="text-xs font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Today's Report</span>
-                                <span class="text-xs text-gray-500">7:22 AM</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Good Morning,</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Here is your intelligence report for today</p>
-                            <div class="bg-gray-50 dark:bg-[#1e2030] rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="font-serif font-bold text-gray-800 dark:text-gray-200 text-xs">Liberty Tribune</span>
-                                    <span class="text-[10px] text-gray-400">Monday, Oct 16</span>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                <img
+                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    alt="Customer use case - Public affairs"
+                                    class="w-full h-full object-cover opacity-90"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
+                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
+                                        Public Affairs &amp; Policy
+                                    </p>
+                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
+                                        Track regulatory moves and stakeholder sentiment across every key market.
+                                    </p>
+                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
+                                        Give leaders real-time context on legislation, regulators, and advocates shaping your agenda.
+                                    </p>
                                 </div>
-                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 leading-snug">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone...</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                <img
+                                    src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
+                                    alt="Customer use case - Enterprise"
+                                    class="w-full h-full object-cover opacity-90"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
+                                <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
+                                    <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
+                                        Enterprise Communications
+                                    </p>
+                                    <p class="text-2xl md:text-3xl font-semibold text-white mb-3">
+                                        Align global teams on the same media and stakeholder picture.
+                                    </p>
+                                    <p class="text-sm md:text-base text-gray-300 max-w-2xl">
+                                        Power executive dashboards, daily briefings, and board updates from a single intelligence layer.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -380,7 +380,437 @@
         </div>
     </section>
 
-    @include('partials.book-time')
+    <!-- What our customers are saying Section -->
+    <section class="py-24 bg-background-dark border-t border-gray-900">
+        <div class="w-full px-4 sm:px-8 lg:px-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">What our customers are saying</h2>
+                <p class="text-gray-400">The world's leading organizations rely on Clipbook as their team's intelligence
+                    foundation.</p>
+            </div>
+            <div id="testimonial-grid" class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8">
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
+                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
+                            insights we gather are unmatched in speed and accuracy."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Julia Germain</div>
+                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-black text-gray-200 text-lg uppercase">American<br />Prairie</div>
+                        <p class="text-gray-300 italic mb-6">"Clipbook has made monitoring press and mentions easier
+                            than ever. I look forward to seeing it in my inbox every morning!"</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Beth Saboe</div>
+                        <div class="text-gray-500 text-xs">Senior Public Relations Manager</div>
+                    </div>
+                </div>
+                <div
+                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
+                    <div>
+                        <div class="h-8 mb-6 font-serif italic text-gray-200 text-xl">Frontwood <span
+                                class="block text-xs not-italic font-sans text-gray-500 tracking-widest uppercase">Strategies</span>
+                        </div>
+                        <p class="text-gray-300 italic mb-6">"Our clients see enterprise-grade media insights from a
+                            boutique firm. We're able to punch above our weight because of Clipbook."</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-white text-sm">Neil Callahan</div>
+                        <div class="text-gray-500 text-xs">Founder</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center gap-4 mt-8">
+                <button
+                    id="testimonial-prev"
+                    class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 bg-black/40 backdrop-blur">
+                    <span class="material-icons text-sm">arrow_back</span>
+                </button>
+                <button
+                    id="testimonial-next"
+                    class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 bg-black/40 backdrop-blur">
+                    <span class="material-icons text-sm">arrow_forward</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    @include('partials.booking-section')
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const categories = ['news', 'social', 'policy', 'broadcasts', 'podcasts', 'newsletters'];
+            const images = {
+                'news': 'https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024',
+                'social': 'https://framerusercontent.com/images/yXqiDPeFWT2cIwkbhKylcuVaX0.png?scale-down-to=1024',
+                'policy': 'https://framerusercontent.com/images/Gq520mpoLjGbAXHWrH5Bpfs7s.png?scale-down-to=1024',
+                'broadcasts': 'https://framerusercontent.com/images/A8C6UEwecpNQopvPRUDKWEqV08c.png?scale-down-to=1024',
+                'podcasts': 'https://framerusercontent.com/images/47PaIaQJPmkfuEXD6AF8HtEwtw.png?scale-down-to=1024',
+                'newsletters': 'https://framerusercontent.com/images/zLdXAsoqcFKwSzysvEogJVXWyVo.png?scale-down-to=1024'
+            };
+
+            let currentIndex = 0;
+            const imageElement = document.getElementById('media-image');
+            const nextButton = document.getElementById('media-next-btn');
+            const prevButton = document.getElementById('media-prev-btn');
+            const pills = document.querySelectorAll('.category-pill');
+
+            function updateButtonVisibility(index) {
+                const totalCategories = categories.length;
+
+                // Ẩn/hiện nút previous
+                if (index === 0) {
+                    // Category đầu tiên: ẩn previous
+                    prevButton.classList.add('hidden');
+                } else {
+                    // Các category khác: hiện previous
+                    prevButton.classList.remove('hidden');
+                }
+
+                // Ẩn/hiện nút next
+                if (index === totalCategories - 1) {
+                    // Category cuối: ẩn next
+                    nextButton.classList.add('hidden');
+                } else {
+                    // Các category khác: hiện next
+                    nextButton.classList.remove('hidden');
+                }
+            }
+
+            function updateActiveCategory(index) {
+                // Remove active class from all pills
+                pills.forEach(pill => {
+                    pill.classList.remove('active');
+                    pill.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
+                    pill.classList.remove('bg-gray-800', 'text-white');
+                });
+
+                // Add active class to current pill
+                const currentPill = pills[index];
+                currentPill.classList.add('active', 'bg-gray-800', 'text-white');
+                currentPill.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
+
+                // Update image
+                const currentCategory = categories[index];
+                imageElement.style.opacity = '0';
+                setTimeout(() => {
+                    imageElement.src = images[currentCategory];
+                    imageElement.style.opacity = '1';
+                }, 150);
+
+                // Update button visibility
+                updateButtonVisibility(index);
+            }
+
+            nextButton.addEventListener('click', function() {
+                if (currentIndex < categories.length - 1) {
+                    currentIndex++;
+                    updateActiveCategory(currentIndex);
+                }
+            });
+
+            prevButton.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateActiveCategory(currentIndex);
+                }
+            });
+
+            // Allow clicking on pills directly
+            pills.forEach((pill, index) => {
+                pill.addEventListener('click', function() {
+                    currentIndex = index;
+                    updateActiveCategory(currentIndex);
+                });
+            });
+
+            // Initialize button visibility
+            updateButtonVisibility(0);
+        });
+
+        // Testimonials slider (slide 1 card at a time with animation, looped)
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = Array.from(document.querySelectorAll('.testimonial-card'));
+            const prevBtn = document.getElementById('testimonial-prev');
+            const nextBtn = document.getElementById('testimonial-next');
+
+            if (!cards.length || !prevBtn || !nextBtn) return;
+
+            let startIndex = 0; // index card đầu tiên đang hiển thị
+            let direction = 1; // 1: next (left), -1: prev (right)
+
+            function getPerView() {
+                if (window.innerWidth >= 1280) return 5; // xl: 5 cards
+                if (window.innerWidth >= 768) return 3;  // md: 3 cards
+                return 1;                                // mobile: 1 card
+            }
+
+            function animateVisible() {
+                const perView = getPerView();
+                const total = cards.length;
+                if (total <= perView) {
+                    // Nếu số card ít hơn hoặc bằng perView thì hiển thị tất cả, không trượt
+                    cards.forEach(card => {
+                        card.classList.remove('hidden');
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateX(0)';
+                        card.style.transition = 'none';
+                    });
+                    return;
+                }
+
+                // Chuẩn hóa startIndex để luôn nằm trong 0..total-1
+                startIndex = ((startIndex % total) + total) % total;
+
+                cards.forEach((card, index) => {
+                    // Tính khoảng cách tuần hoàn từ startIndex
+                    const offset = (index - startIndex + total) % total;
+                    const visible = offset < perView;
+
+                    if (visible) {
+                        card.classList.remove('hidden');
+                        // reset for animation
+                        card.style.opacity = '0';
+                        card.style.transform = `translateX(${direction * 40}px)`;
+                        requestAnimationFrame(() => {
+                            card.style.transition = 'transform 0.4s ease-out, opacity 0.4s ease-out';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateX(0)';
+                        });
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            }
+
+            prevBtn.addEventListener('click', function() {
+                direction = -1;
+                startIndex -= 1; // trượt lùi 1 card
+                animateVisible();
+            });
+
+            nextBtn.addEventListener('click', function() {
+                direction = 1;
+                startIndex += 1; // trượt tới 1 card
+                animateVisible();
+            });
+
+            window.addEventListener('resize', animateVisible);
+            animateVisible();
+        });
+
+        // Customer hero slider (center slide with blurred side slides, looped)
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = Array.from(document.querySelectorAll('.customer-slide'));
+            const prev = document.getElementById('customer-prev');
+            const next = document.getElementById('customer-next');
+
+            if (!slides.length || !prev || !next) return;
+
+            let current = 0;
+
+            function updateCustomerSlider() {
+                const total = slides.length;
+
+                slides.forEach((slide, index) => {
+                    // Khoảng cách tuần hoàn từ slide hiện tại
+                    const offset = (index - current + total) % total;
+
+                    slide.style.zIndex = '0';
+
+                    if (offset === 0) {
+                        // Slide trung tâm
+                            slide.style.opacity = '1';
+                            slide.style.transform = 'translateX(0) scale(1)';
+                            slide.style.filter = 'blur(0px)';
+                            slide.style.zIndex = '20';
+                    } else if (offset === 1 || offset === total - 1) {
+                        // Hai slide hai bên
+                        const sideDirection = offset === 1 ? 1 : -1;
+                        slide.style.opacity = '0.35';
+                        slide.style.transform = `translateX(${sideDirection * 160}px) scale(0.9)`;
+                        slide.style.filter = 'blur(1px)';
+                        slide.style.zIndex = '10';
+                    } else {
+                        // Các slide còn lại ẩn đi
+                        slide.style.opacity = '0';
+                        slide.style.transform = 'translateX(0) scale(0.9)';
+                        slide.style.filter = 'blur(0px)';
+                    }
+                });
+            }
+
+            next.addEventListener('click', function() {
+                current = (current + 1) % slides.length;
+                updateCustomerSlider();
+            });
+
+            prev.addEventListener('click', function() {
+                current = (current - 1 + slides.length) % slides.length;
+                updateCustomerSlider();
+            });
+
+            updateCustomerSlider();
+        });
+
+        // Reporting Section Carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const reportingImages = [
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
+                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056'
+            ];
+
+            let reportingCurrentIndex = 0;
+            const reportingImageElement = document.getElementById('reporting-image');
+            const reportingNextButton = document.getElementById('reporting-next-btn');
+            const reportingPrevButton = document.getElementById('reporting-prev-btn');
+
+            function updateReportingButtonVisibility(index) {
+                const totalImages = reportingImages.length;
+
+                // Ẩn/hiện nút previous
+                if (index === 0) {
+                    reportingPrevButton.classList.add('hidden');
+                } else {
+                    reportingPrevButton.classList.remove('hidden');
+                }
+
+                // Ẩn/hiện nút next
+                if (index === totalImages - 1) {
+                    reportingNextButton.classList.add('hidden');
+                } else {
+                    reportingNextButton.classList.remove('hidden');
+                }
+            }
+
+            function updateReportingImage(index) {
+                reportingImageElement.style.opacity = '0';
+                setTimeout(() => {
+                    reportingImageElement.src = reportingImages[index];
+                    reportingImageElement.style.opacity = '1';
+                }, 150);
+                updateReportingButtonVisibility(index);
+            }
+
+            reportingNextButton.addEventListener('click', function() {
+                if (reportingCurrentIndex < reportingImages.length - 1) {
+                    reportingCurrentIndex++;
+                    updateReportingImage(reportingCurrentIndex);
+                }
+            });
+
+            reportingPrevButton.addEventListener('click', function() {
+                if (reportingCurrentIndex > 0) {
+                    reportingCurrentIndex--;
+                    updateReportingImage(reportingCurrentIndex);
+                }
+            });
+
+            // Initialize button visibility
+            updateReportingButtonVisibility(0);
+        });
+
+        // Analysis Section Carousel
+        document.addEventListener('DOMContentLoaded', function() {
+            const analysisImages = [
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120'
+            ];
+
+            let analysisCurrentIndex = 0;
+            const analysisImageElement = document.getElementById('analysis-image');
+            const analysisNextButton = document.getElementById('analysis-next-btn');
+            const analysisPrevButton = document.getElementById('analysis-prev-btn');
+
+            function updateAnalysisImage(index) {
+                analysisImageElement.style.opacity = '0';
+                setTimeout(() => {
+                    analysisImageElement.src = analysisImages[index];
+                    analysisImageElement.style.opacity = '1';
+                }, 150);
+            }
+
+            // Luôn hiển thị cả 2 nút
+            analysisPrevButton.classList.remove('hidden');
+            analysisNextButton.classList.remove('hidden');
+
+            analysisNextButton.addEventListener('click', function() {
+                analysisCurrentIndex = (analysisCurrentIndex + 1) % analysisImages.length;
+                updateAnalysisImage(analysisCurrentIndex);
+            });
+
+            analysisPrevButton.addEventListener('click', function() {
+                analysisCurrentIndex = (analysisCurrentIndex - 1 + analysisImages.length) % analysisImages.length;
+                updateAnalysisImage(analysisCurrentIndex);
+            });
+        });
+    </script>
 
 @endsection
 

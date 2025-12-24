@@ -72,7 +72,44 @@
             background-image: radial-gradient(#2d3042 1px, transparent 1px);
             background-size: 20px 20px;
         }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+        .animate-scroll {
+            animation: scroll 15s linear infinite;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
+    <script>
+        // Smooth scroll with offset for fixed header
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const headerOffset = 80; // Height of fixed header
+                            const elementPosition = target.getBoundingClientRect().top;
+                            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                            window.scrollTo({
+                                top: offsetPosition,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
     @stack('styles')
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark transition-colors duration-300">
