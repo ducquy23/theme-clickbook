@@ -17,7 +17,7 @@
                 seed round
                 <span class="material-icons text-sm">arrow_forward</span>
             </a>
-            <h1 class="text-7xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
                 AI research and analysis for <br/>
                 <span class="text-white">public relations</span>
             </h1>
