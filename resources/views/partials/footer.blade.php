@@ -27,7 +27,7 @@
                 <h4 class="text-white font-bold mb-6">Resources</h4>
                 <ul class="space-y-4">
                     <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Webinars</a></li>
-                    <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Customer Stories</a></li>
+                    <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="{{ route('customer-stories') }}">Customer Stories</a></li>
                     <li><a class="text-gray-400 hover:text-white transition-colors text-sm" href="#">Blogs</a></li>
                 </ul>
             </div>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Clipbook Customer Stories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0b52ff",
+              "primary-hover": "#0a46d9",
+              "accent-blue": "#0b52ff",
+              "background-light": "#ffffff",
+              "background-dark": "#0B0C15",
+              "card-dark": "#11121C",
+              "text-light": "#E5E7EB",
+              "text-dark": "#E5E7EB",
+              "muted-dark": "#9CA3AF",
+            },
+            fontFamily: {
+              display: ["Inter", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+            },
+            backgroundImage: {
+               'hero-gradient': 'linear-gradient(120deg, rgba(11,82,255,0.12) 0%, rgba(14,165,233,0.08) 100%)',
+               'banner-gradient': 'linear-gradient(90deg, #0b52ff 0%, #2563eb 100%)',
+               'card-gradient': 'linear-gradient(135deg, #eef2ff 0%, #e0f2fe 100%)',
+            }
+          },
+        },
+      };
+    </script>
+<style>.text-gradient {
+            background: linear-gradient(270deg, #79e4ff 0%, #c1ff57 49%, #ffc457 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }.bg-dots {
+            background-image: radial-gradient(#1d4ed8 1px, transparent 1px);
+            background-size: 22px 22px;
+        }.hero-sheen {
+            background: radial-gradient(120% 120% at 20% 20%, rgba(36,88,255,0.28) 0%, rgba(4,10,28,0.08) 45%), radial-gradient(80% 80% at 80% 10%, rgba(66,148,255,0.24) 0%, rgba(5,8,18,0.08) 40%), linear-gradient(180deg, #040815 0%, #050a18 60%, #030612 100%);
+        }.hero-input {
+            background: #0a0f2a;
+            border: 1px solid rgba(255,255,255,0.08);
+        }.hero-input:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(34,116,255,0.45);
+            border-color: rgba(34,116,255,0.8);
+        }.hero-btn, .btn-gradient {
+            background: linear-gradient(90deg, #7b5dff 0%, #4f46e5 100%);
+        }.hero-btn:hover, .btn-gradient:hover {
+            background: linear-gradient(90deg, #8a6bff 0%, #3f3be6 100%);
+        }
+    </style>
+</head>
+<body class="bg-[#050b1d] text-text-dark font-sans text-sm font-normal leading-relaxed antialiased transition-colors duration-200">
+<nav class="border-b border-white/5 bg-transparent relative z-20 backdrop-blur-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 text-xl font-bold tracking-tight text-white" href="#">
+<div class="w-9 h-9 bg-white text-[#0a2be8] rounded-md flex items-center justify-center font-bold text-lg">C</div>
+                        Clipbook
+                    </a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-gray-200 hover:text-white text-sm font-medium transition" href="#">Products</a>
+<a class="text-gray-200 hover:text-white text-sm font-medium transition" href="#">Customers</a>
+<a class="text-gray-200 hover:text-white text-sm font-medium transition" href="#">Resources</a>
+<a class="text-gray-200 hover:text-white text-sm font-medium transition" href="#">Company &amp; Careers</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-gray-200 hover:text-white text-sm font-medium transition" href="#">Sign In</a>
+<a class="btn-gradient text-white px-5 py-2.5 rounded-md text-sm font-semibold transition shadow-lg shadow-indigo-500/30" href="#">Schedule a Demo</a>
+</div>
+</div>
+</div>
+</nav>
+<header class="relative pt-20 pb-16 overflow-hidden hero-sheen">
+<div class="absolute inset-0 bg-dots opacity-30 pointer-events-none"></div>
+<div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image:url('https://framerusercontent.com/images/0eGbwbEBzhenvgNNFOsUAap98o.png?width=2750&height=594'); background-size:cover; background-position:center;"></div>
+<div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight text-gradient">
+Customer Stories
+</h1>
+<p class="text-base sm:text-lg text-gray-300 mb-6 max-w-3xl mx-auto font-normal leading-relaxed">
+                See how Clipbook accelerates growth for leading communications teams.
+            </p>
+<div class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-3">
+<input class="hero-input w-full flex-grow text-white rounded-md px-5 py-3.5 text-sm sm:text-base placeholder-gray-400 shadow-lg" placeholder="What's your work email?" type="email"/>
+<button class="hero-btn w-full sm:w-auto text-white px-6 py-3.5 rounded-md font-medium text-sm sm:text-base transition whitespace-nowrap shadow-xl shadow-indigo-500/35">
+                    Start Monitoring
+                </button>
+</div>
+</div>
+<div class="relative z-10 mt-14 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<p class="text-gray-400 text-xs sm:text-sm mb-6 tracking-[0.18em] uppercase">Trusted by the world's leading public relations, government affairs, and communications teams.</p>
+<div class="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 opacity-90 text-sm">
+<div class="min-w-[7rem] text-xs font-serif uppercase tracking-[0.35em] text-gray-300 border-b border-gray-600 pb-1 hover:text-white transition-colors text-center">Frontwood<br/>Strategies</div>
+<div class="min-w-[7rem] text-lg font-bold text-gray-300 hover:text-white transition-colors text-center">OneMain <span class="font-normal text-xs block">Financial.</span></div>
+<div class="min-w-[7rem] flex flex-col items-center gap-2 text-gray-300 text-[11px] font-semibold uppercase leading-tight hover:text-white transition-colors">
+<div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center text-[8px]">DE</div>
+                    State of <br/> Delaware
+                </div>
+<div class="min-w-[7rem] font-black text-lg text-gray-300 uppercase tracking-tighter hover:text-white transition-colors text-center">American<br/>Prairie</div>
+<div class="min-w-[7rem] font-serif text-xl text-gray-300 hover:text-white transition-colors text-center">ABR</div>
+<div class="min-w-[7rem] text-xs font-semibold text-gray-300 hover:text-white transition-colors uppercase tracking-wide text-center">Weber<br/>Shandwick</div>
+<div class="min-w-[7rem] text-xs font-semibold text-gray-300 hover:text-white transition-colors uppercase tracking-wide text-center">CAQ</div>
+</div>
+</div>
+</header>
+<main class="py-16 bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+<article class="group bg-card-dark border border-white/10 rounded-lg overflow-hidden shadow-sm hover:shadow-2xl hover:border-white/20 transition-all duration-300 flex flex-col">
+<div class="flex flex-col h-full">
+<div class="flex flex-col md:flex-row h-full items-stretch gap-6">
+<div class="p-6 md:flex-[0_0_55%] flex flex-col justify-start">
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-block border border-gray-700 rounded-full px-4 py-1.5 text-xs font-semibold text-gray-200 bg-transparent">Public Affairs</span>
+</div>
+<div class="mb-6">
+<div class="w-14 h-14 flex flex-col items-center justify-center">
+<img src="https://framerusercontent.com/images/PU0QrXg8HReGwB5eotrefFUxjU.png?width=6004&height=6000" alt="50 State Icon" class="w-14 h-14 object-contain"/>
+</div>
+<div class="text-[10px] tracking-[0.18em] font-bold uppercase text-gray-400 mt-2 text-center">STATE</div>
+</div>
+<h3 class="text-base md:text-lg font-medium text-white leading-tight mb-3">
+                    How 50 State Built a Media and Policy Intelligence Engine for 40+ National Clients with Clipbook
+                </h3>
+</div>
+<div class="md:flex-[0_0_45%] relative border-l border-white/5 bg-[#1e1b4b]">
+<img alt="50 State" class="w-full h-72 md:h-full object-cover" src="https://framerusercontent.com/images/eJ0Fdf5V6sEs0GpkuDdeVQI46Nk.png?scale-down-to=512&width=840&height=840"/>
+</div>
+</div>
+<div class="px-8 py-5 border-t border-white/10 bg-card-dark">
+<a class="inline-flex items-center text-sm font-semibold text-white hover:text-primary transition group-hover:translate-x-1 duration-200" href="#">
+                Read Customer Story <span class="material-symbols-outlined text-sm ml-1 align-middle">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card-dark border border-white/10 rounded-lg overflow-hidden shadow-sm hover:shadow-2xl hover:border-white/20 transition-all duration-300 flex flex-col">
+<div class="flex flex-col h-full">
+<div class="flex flex-col md:flex-row h-full items-stretch gap-6">
+<div class="p-6 md:flex-[0_0_55%] flex flex-col justify-start">
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-block border border-gray-700 rounded-full px-4 py-1.5 text-xs font-semibold text-gray-200 bg-transparent">Public Affairs</span>
+</div>
+<div class="mb-6">
+<div class="w-14 h-14 flex flex-col items-center justify-center">
+<img src="https://framerusercontent.com/images/Vmmd1EhzXl4HcBDeObFyte2HIDA.png?width=563&height=176" alt="Frontwood Icon" class="w-14 h-14 object-contain"/>
+</div>
+<div class="text-[10px] font-serif text-primary/70 uppercase tracking-widest mt-2 text-center">Frontwood Strategies</div>
+</div>
+<h3 class="text-base md:text-lg font-medium text-white leading-tight mb-3">
+                    How Frontwood Strategies Scaled Client Impact 10X by Automating Media Intelligence
+                </h3>
+</div>
+<div class="md:flex-[0_0_45%] relative border-l border-white/5 bg-[#0B0C15]">
+<img alt="Frontwood Strategies" class="w-full h-72 md:h-full object-cover" src="https://framerusercontent.com/images/nENezD1jn1xxr6D40vgJTGLIYk.png?scale-down-to=512&width=840&height=840"/>
+</div>
+</div>
+<div class="px-8 py-5 border-t border-white/10 bg-card-dark">
+<a class="inline-flex items-center text-sm font-semibold text-white hover:text-primary transition group-hover:translate-x-1 duration-200" href="#">
+                Read Customer Story <span class="material-symbols-outlined text-sm ml-1 align-middle">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<article class="group bg-card-dark border border-white/10 rounded-lg overflow-hidden shadow-sm hover:shadow-2xl hover:border-white/20 transition-all duration-300 flex flex-col">
+<div class="flex flex-col h-full">
+<div class="flex flex-col md:flex-row h-full items-stretch gap-6">
+<div class="p-6 md:flex-[0_0_55%] flex flex-col justify-start">
+<div class="flex items-center gap-3 mb-6">
+<span class="inline-block border border-gray-700 rounded-full px-4 py-1.5 text-xs font-semibold text-gray-200 bg-transparent">Governments &amp; Agencies</span>
+</div>
+<div class="mb-6 flex items-center gap-2">
+<div class="w-14 h-14 flex flex-col items-center justify-center">
+<img src="https://framerusercontent.com/images/DlldzajeXBSx7E3wU3tHD3iVp5I.png?width=645&height=233" alt="Delaware Icon" class="w-14 h-14 object-contain"/>
+</div>
+<div class="text-[10px] font-semibold uppercase text-gray-400 leading-tight text-center">State of Delaware</div>
+</div>
+<h3 class="text-base md:text-lg font-medium text-white leading-tight mb-3">
+                    How the State of Delaware Unified Media Intelligence for 114 Leaders with Clipbook
+                </h3>
+</div>
+<div class="md:flex-[0_0_45%] relative border-l border-white/5 bg-[#1e1b4b]">
+<img alt="State of Delaware" class="w-full h-72 md:h-full object-cover" src="https://framerusercontent.com/images/AuyACwK5UHjwxseYRp0FgW2Hh4.png?scale-down-to=512&width=840&height=840"/>
+</div>
+</div>
+<div class="px-8 py-5 border-t border-white/10 bg-card-dark">
+<a class="inline-flex items-center text-sm font-semibold text-white hover:text-primary transition group-hover:translate-x-1 duration-200" href="#">
+                Read Customer Story <span class="material-symbols-outlined text-sm ml-1 align-middle">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<div class="hidden md:block"></div>
+</div>
+</div>
+</main>
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-background-dark">
+<div class="max-w-7xl mx-auto rounded-3xl overflow-hidden relative border border-white/10">
+<div class="absolute inset-0" style="background-image:url('https://framerusercontent.com/images/0eGbwbEBzhenvgNNFOsUAap98o.png?width=2750&height=594'); background-size:cover; background-position:center;"></div>
+<div class="relative z-10 px-8 py-16 md:px-16 md:py-18 flex flex-col md:flex-row items-center justify-between gap-10">
+<div class="md:w-2/3">
+<h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Book time with the Clipbook team</h2>
+<p class="text-blue-50 text-lg md:text-xl max-w-2xl font-normal leading-relaxed">
+                        Experience how leading teams use Clipbook to monitor trends, measure impact, and sharpen messaging across every channel.
+                    </p>
+</div>
+<div class="md:w-1/3 w-full">
+<div class="bg-black/20 backdrop-blur-md p-2 rounded-lg flex items-center border border-white/10 shadow-xl">
+<input class="bg-transparent border-none text-white placeholder-blue-100 focus:ring-0 w-full px-4 text-sm" placeholder="Enter email address" type="text"/>
+<button class="btn-gradient text-white px-6 py-3 rounded text-sm font-bold whitespace-nowrap transition shadow-lg shadow-indigo-500/30">
+                            Schedule a Demo
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-[#0B0C15] border-t border-white/5 pt-16 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+<div class="col-span-1 md:col-span-1">
+<a class="flex items-center gap-2 text-xl font-bold tracking-tight text-white mb-8" href="#">
+<div class="w-8 h-8 bg-white text-primary rounded flex items-center justify-center font-bold text-lg">C</div>
+                        Clipbook
+                    </a>
+<a class="inline-block btn-gradient text-white px-6 py-3 rounded-md font-semibold text-sm transition shadow-lg shadow-indigo-500/30" href="#">
+                        Schedule a Demo
+                    </a>
+</div>
+<div class="col-span-1">
+<h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-6">Company</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-400 hover:text-white text-sm transition" href="#">Products</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition" href="#">Company &amp; Careers</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-6">Resources</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-400 hover:text-white text-sm transition" href="#">Webinars</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition" href="#">Customer Stories</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition" href="#">Blogs</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="text-sm font-semibold text-white uppercase tracking-wider mb-6">Community</h4>
+<ul class="space-y-4">
+<li><a class="text-gray-400 hover:text-white text-sm transition flex items-center gap-3" href="#"><i class="fab fa-linkedin text-lg"></i> LinkedIn</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition flex items-center gap-3" href="#"><i class="fab fa-youtube text-lg"></i> YouTube</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition flex items-center gap-3" href="#"><i class="fab fa-x-twitter text-lg"></i> X</a></li>
+<li><a class="text-gray-400 hover:text-white text-sm transition flex items-center gap-3" href="#"><i class="fas fa-butterfly text-lg"></i> Bluesky</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-gray-500 text-sm">© 2025 Clipbook. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="text-gray-400 hover:text-gray-200 text-sm transition" href="#">Terms &amp; Conditions</a>
+</div>
+</div>
+</div>
+</footer>
+
+</body></html>

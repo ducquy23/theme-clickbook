@@ -9,7 +9,7 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="#">Products</a>
-                    <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="#">Customers</a>
+                    <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="{{ route('customer-stories') }}">Customers</a>
                     <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="#">Resources</a>
                     <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="{{ route('company-careers') }}">Company &amp; Careers</a>
                 </div>
