@@ -304,17 +304,17 @@
                     </svg>
                 </button>
 
-                <div class="overflow-hidden rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl">
-                    <div id="customer-track" class="flex transition-transform duration-500 ease-out">
+                <div class="relative h-[420px] md:h-[460px] lg:h-[500px]">
+                    <div id="customer-stage" class="relative h-full">
                         <!-- Slide 1 -->
-                        <div class="customer-slide flex-shrink-0 w-full">
-                            <div class="relative">
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
                                     src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
                                     alt="Customer use case"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
                                 <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
                                     <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
                                         Communications &amp; Public Relations
@@ -330,14 +330,14 @@
                         </div>
 
                         <!-- Slide 2 -->
-                        <div class="customer-slide flex-shrink-0 w-full">
-                            <div class="relative">
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
                                     src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
                                     alt="Customer use case - Public affairs"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
                                 <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
                                     <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
                                         Public Affairs &amp; Policy
@@ -350,17 +350,17 @@
                                     </p>
                                 </div>
                             </div>
-                                </div>
+                        </div>
 
                         <!-- Slide 3 -->
-                        <div class="customer-slide flex-shrink-0 w-full">
-                            <div class="relative">
+                        <div class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
+                            <div class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
                                 <img
                                     src="https://framerusercontent.com/images/oN1O1brNORVTC1CeikRL5z6ituw.png?scale-down-to=1024&width=2464&height=1368"
                                     alt="Customer use case - Enterprise"
                                     class="w-full h-full object-cover opacity-90"
                                 />
-                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/50 to-transparent"></div>
                                 <div class="absolute inset-x-0 bottom-0 p-8 md:p-10 lg:p-12">
                                     <p class="text-sm font-medium text-blue-300 mb-3 uppercase tracking-[0.2em]">
                                         Enterprise Communications
@@ -661,19 +661,45 @@
             animateVisible();
         });
 
-        // Customer hero slider (center slide with next/prev, looped)
+        // Customer hero slider (center slide with blurred side slides, looped)
         document.addEventListener('DOMContentLoaded', function() {
-            const track = document.getElementById('customer-track');
             const slides = Array.from(document.querySelectorAll('.customer-slide'));
             const prev = document.getElementById('customer-prev');
             const next = document.getElementById('customer-next');
 
-            if (!track || !slides.length || !prev || !next) return;
+            if (!slides.length || !prev || !next) return;
 
             let current = 0;
 
             function updateCustomerSlider() {
-                track.style.transform = `translateX(-${current * 100}%)`;
+                const total = slides.length;
+
+                slides.forEach((slide, index) => {
+                    // Khoảng cách tuần hoàn từ slide hiện tại
+                    const offset = (index - current + total) % total;
+
+                    slide.style.zIndex = '0';
+
+                    if (offset === 0) {
+                        // Slide trung tâm
+                            slide.style.opacity = '1';
+                            slide.style.transform = 'translateX(0) scale(1)';
+                            slide.style.filter = 'blur(0px)';
+                            slide.style.zIndex = '20';
+                    } else if (offset === 1 || offset === total - 1) {
+                        // Hai slide hai bên
+                        const sideDirection = offset === 1 ? 1 : -1;
+                        slide.style.opacity = '0.35';
+                        slide.style.transform = `translateX(${sideDirection * 160}px) scale(0.9)`;
+                        slide.style.filter = 'blur(1px)';
+                        slide.style.zIndex = '10';
+                    } else {
+                        // Các slide còn lại ẩn đi
+                        slide.style.opacity = '0';
+                        slide.style.transform = 'translateX(0) scale(0.9)';
+                        slide.style.filter = 'blur(0px)';
+                    }
+                });
             }
 
             next.addEventListener('click', function() {
@@ -685,6 +711,8 @@
                 current = (current - 1 + slides.length) % slides.length;
                 updateCustomerSlider();
             });
+
+            updateCustomerSlider();
         });
 
         // Reporting Section Carousel
