@@ -483,7 +483,7 @@
             updateButtonVisibility(0);
         });
 
-        // Testimonials slider (show multiple blocks with prev/next)
+        // Testimonials slider (slide left/right with animation)
         document.addEventListener('DOMContentLoaded', function() {
             const cards = Array.from(document.querySelectorAll('.testimonial-card'));
             const prevBtn = document.getElementById('testimonial-prev');
@@ -492,38 +492,52 @@
             if (!cards.length || !prevBtn || !nextBtn) return;
 
             let currentIndex = 0;
+            let direction = 1; // 1: next (left), -1: prev (right)
 
             function getPerView() {
                 if (window.innerWidth >= 1280) return 5; // xl: 5 cards
-                if (window.innerWidth >= 768) return 3;  // md-lg: 3 cards
+                if (window.innerWidth >= 768) return 3;  // md: 3 cards
                 return 1;                                // mobile: 1 card
             }
 
-            function updateVisible() {
+            function animateVisible() {
                 const perView = getPerView();
                 const maxStart = Math.max(0, cards.length - perView);
-                if (currentIndex > maxStart) currentIndex = maxStart;
+                currentIndex = Math.max(0, Math.min(currentIndex, maxStart));
 
                 cards.forEach((card, index) => {
                     const visible = index >= currentIndex && index < currentIndex + perView;
-                    card.classList.toggle('hidden', !visible);
+
+                    if (visible) {
+                        card.classList.remove('hidden');
+                        // reset for animation
+                        card.style.opacity = '0';
+                        card.style.transform = `translateX(${direction * 40}px)`;
+                        requestAnimationFrame(() => {
+                            card.style.transition = 'transform 0.4s ease-out, opacity 0.4s ease-out';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateX(0)';
+                        });
+                    } else {
+                        card.classList.add('hidden');
+                    }
                 });
             }
 
             prevBtn.addEventListener('click', function() {
-                const perView = getPerView();
-                currentIndex = (currentIndex - perView + cards.length) % cards.length;
-                updateVisible();
+                direction = -1;
+                currentIndex -= 1;
+                animateVisible();
             });
 
             nextBtn.addEventListener('click', function() {
-                const perView = getPerView();
-                currentIndex = (currentIndex + perView) % cards.length;
-                updateVisible();
+                direction = 1;
+                currentIndex += 1;
+                animateVisible();
             });
 
-            window.addEventListener('resize', updateVisible);
-            updateVisible();
+            window.addEventListener('resize', animateVisible);
+            animateVisible();
         });
 
         // Reporting Section Carousel
