@@ -10,7 +10,7 @@
     <header class="relative py-12 overflow-hidden hero-sheen hero-section z-10 flex items-center">
         <div class="absolute inset-0 bg-dots opacity-30 pointer-events-none"></div>
         <div class="absolute inset-0 opacity-10 pointer-events-none hero-bg-img"></div>
-        <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="customer-title font-bold mb-4">
                 <span data-text-fill="true" class="framer-text" style="background-image: linear-gradient(270deg, rgb(121, 228, 255) 0%, rgb(193, 255, 87) 49.0991%, rgb(255, 196, 87) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
                     Customer Stories
@@ -19,7 +19,7 @@
             <p class="text-base sm:text-lg customer-subtitle mt-2 mb-6 max-w-3xl mx-auto font-normal leading-relaxed">
                 See how Clipbook accelerates growth for leading communications teams.
             </p>
-            <div class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-3 hero-form">
+            <div class="max-w-3xl mx-auto flex flex-col sm:flex-row gap-3 hero-form">
                 <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email"/>
                 <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all" href="#">
                     Start Monitoring
@@ -30,7 +30,7 @@
 
     <main class="py-16 relative z-10 customer-main">
         <section class="trusted-section relative z-10 text-center mb-10 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-6xl mx-auto">
+            <div class="max-w-screen-2xl mx-auto">
                 <p class="text-gray-400 text-xs sm:text-sm mb-4 tracking-[0.18em] uppercase">Trusted by the world's leading public relations, government affairs, and communications teams.</p>
                 <div class="logo-marquee mt-4">
                     <div class="logo-track">
@@ -60,8 +60,8 @@
             </div>
         </section>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
                 <article class="group bg-card-dark border border-white/10 rounded-lg overflow-hidden shadow-sm hover:shadow-2xl hover:border-white/20 transition-all duration-300 flex flex-col">
                     <div class="flex flex-col h-full">
                         <div class="flex flex-col md:flex-row h-full items-stretch gap-6">

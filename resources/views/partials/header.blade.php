@@ -1,6 +1,9 @@
 <!-- Navigation -->
 <nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    @if (!request()->routeIs('home'))
+        @include('partials.announcement-bar')
+    @endif
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-20">
             <div class="flex items-center gap-8">
                 <a href="{{ route('home') }}">
