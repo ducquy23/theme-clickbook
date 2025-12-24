@@ -109,6 +109,11 @@
                         <div class="space-y-4 relative">
                             <div class="flex justify-center relative">
                                 <img id="media-image" src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto transition-opacity duration-300" />
+                                <button id="media-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="15 18 9 12 15 6"></polyline>
+                                    </svg>
+                                </button>
                                 <button id="media-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 18 15 12 9 6"></polyline>
@@ -396,7 +401,30 @@
             let currentIndex = 0;
             const imageElement = document.getElementById('media-image');
             const nextButton = document.getElementById('media-next-btn');
+            const prevButton = document.getElementById('media-prev-btn');
             const pills = document.querySelectorAll('.category-pill');
+            
+            function updateButtonVisibility(index) {
+                const totalCategories = categories.length;
+                
+                // Ẩn/hiện nút previous
+                if (index === 0) {
+                    // Category đầu tiên: ẩn previous
+                    prevButton.classList.add('hidden');
+                } else {
+                    // Các category khác: hiện previous
+                    prevButton.classList.remove('hidden');
+                }
+                
+                // Ẩn/hiện nút next
+                if (index === totalCategories - 1) {
+                    // Category cuối: ẩn next
+                    nextButton.classList.add('hidden');
+                } else {
+                    // Các category khác: hiện next
+                    nextButton.classList.remove('hidden');
+                }
+            }
             
             function updateActiveCategory(index) {
                 // Remove active class from all pills
@@ -418,11 +446,23 @@
                     imageElement.src = images[currentCategory];
                     imageElement.style.opacity = '1';
                 }, 150);
+                
+                // Update button visibility
+                updateButtonVisibility(index);
             }
             
             nextButton.addEventListener('click', function() {
-                currentIndex = (currentIndex + 1) % categories.length;
-                updateActiveCategory(currentIndex);
+                if (currentIndex < categories.length - 1) {
+                    currentIndex++;
+                    updateActiveCategory(currentIndex);
+                }
+            });
+            
+            prevButton.addEventListener('click', function() {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateActiveCategory(currentIndex);
+                }
             });
             
             // Allow clicking on pills directly
@@ -432,6 +472,9 @@
                     updateActiveCategory(currentIndex);
                 });
             });
+            
+            // Initialize button visibility
+            updateButtonVisibility(0);
         });
     </script>
 
