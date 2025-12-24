@@ -388,17 +388,17 @@
                     </svg>
                 </button>
 
-                <div class="relative h-[420px] md:h-[460px] lg:h-[500px]">
+                <div class="relative h-[500px] md:h-[600px] lg:h-[700px]">
                     <div id="customer-stage" class="relative h-full">
                         <!-- Slide 1 -->
                         <div
                             class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
                             <div
-                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
                                 <img
                                     src="https://framerusercontent.com/images/EMlbPgxWHvqDBM4UzGGR5l9pCQ.png?scale-down-to=1024&width=7252&height=4026"
                                     alt="Customer use case"
-                                    class="w-full h-full object-cover opacity-90"
+                                    class="w-full h-full object-contain"
                                 />
                             </div>
                         </div>
@@ -407,11 +407,11 @@
                         <div
                             class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
                             <div
-                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
                                 <img
                                     src="https://framerusercontent.com/images/9M4KT4I7mZ2KbSOmrutDEJdoxE.png?scale-down-to=1024&width=7251&height=4026"
                                     alt="Customer use case - Public affairs"
-                                    class="w-full h-full object-cover opacity-90"
+                                    class="w-full h-full object-contain"
                                 />
                             </div>
                         </div>
@@ -420,11 +420,11 @@
                         <div
                             class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
                             <div
-                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden">
+                                class="relative h-full rounded-3xl border border-gray-800 bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
                                 <img
                                     src="https://framerusercontent.com/images/ZWbVXtVAJJRzJu4BfrDCoHNnBLw.png?scale-down-to=512&width=7251&height=4026"
                                     alt="Customer use case - Enterprise"
-                                    class="w-full h-full object-cover opacity-90"
+                                    class="w-full h-full object-contain"
                                 />
                             </div>
                         </div>
