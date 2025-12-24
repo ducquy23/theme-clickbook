@@ -73,7 +73,7 @@
                     Schedule a Demo
                 </a>
                 <!-- Mobile menu button -->
-                <button id="mobile-menu-toggle" class="md:hidden text-[#F5F6FA] p-2">
+                <button id="mobile-menu-toggle" class="md:hidden text-[#F5F6FA] p-2 z-[60] relative">
                     <span class="material-icons text-2xl">menu</span>
                 </button>
             </div>
@@ -82,8 +82,8 @@
 </nav>
 
 <!-- Mobile Menu Overlay -->
-<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-50 hidden md:hidden">
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-[#151725] shadow-xl transform -translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-[100] hidden md:hidden" style="display: none;">
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-[#151725] shadow-xl transform -translate-x-full transition-transform duration-300 z-[100] overflow-y-auto">
         <div class="p-6">
             <!-- Header with logo and close button -->
             <div class="flex items-center justify-between mb-8">
@@ -157,21 +157,28 @@
         const menuItems = document.querySelectorAll('.mobile-menu-item');
 
         // Toggle menu
-        menuToggle?.addEventListener('click', function() {
-            menuOverlay.classList.remove('hidden');
-            setTimeout(() => {
-                mobileMenu.classList.remove('-translate-x-full');
-            }, 10);
-            document.body.style.overflow = 'hidden';
+        menuToggle?.addEventListener('click', function(e) {
+            e.stopPropagation();
+            if (menuOverlay && mobileMenu) {
+                menuOverlay.classList.remove('hidden');
+                menuOverlay.style.display = 'block';
+                setTimeout(() => {
+                    mobileMenu.classList.remove('-translate-x-full');
+                }, 10);
+                document.body.style.overflow = 'hidden';
+            }
         });
 
         // Close menu
         function closeMenu() {
-            mobileMenu.classList.add('-translate-x-full');
-            setTimeout(() => {
-                menuOverlay.classList.add('hidden');
-            }, 300);
-            document.body.style.overflow = '';
+            if (mobileMenu && menuOverlay) {
+                mobileMenu.classList.add('-translate-x-full');
+                setTimeout(() => {
+                    menuOverlay.classList.add('hidden');
+                    menuOverlay.style.display = 'none';
+                }, 300);
+                document.body.style.overflow = '';
+            }
         }
 
         menuClose?.addEventListener('click', closeMenu);
