@@ -1,4 +1,4 @@
-<div class="w-full bg-gradient-to-r from-[#0a1f5a] via-[#0f62ae] to-[#0b1d73] text-white text-sm">
+<div class="w-full text-white text-sm" style="background-image: url('https://framerusercontent.com/images/XjjIAjUdrsus28xkR4nFkUUWKzs.png?width=2750&height=96'); background-size: cover; background-position: center;">
     <div class="max-w-screen-2xl mx-auto px-4 py-2 flex items-center justify-center">
         <a href="#" class="inline-flex items-center gap-2 text-white font-semibold">
             <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo" class="w-6 h-6 object-contain"/>
