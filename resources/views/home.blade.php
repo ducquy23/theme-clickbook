@@ -483,7 +483,7 @@
             updateButtonVisibility(0);
         });
 
-        // Testimonials slider (slide left/right with animation)
+        // Testimonials slider (slide 1 card at a time with animation, looped)
         document.addEventListener('DOMContentLoaded', function() {
             const cards = Array.from(document.querySelectorAll('.testimonial-card'));
             const prevBtn = document.getElementById('testimonial-prev');
@@ -491,7 +491,7 @@
 
             if (!cards.length || !prevBtn || !nextBtn) return;
 
-            let currentIndex = 0;
+            let startIndex = 0; // index card đầu tiên đang hiển thị
             let direction = 1; // 1: next (left), -1: prev (right)
 
             function getPerView() {
@@ -502,11 +502,25 @@
 
             function animateVisible() {
                 const perView = getPerView();
-                const maxStart = Math.max(0, cards.length - perView);
-                currentIndex = Math.max(0, Math.min(currentIndex, maxStart));
+                const total = cards.length;
+                if (total <= perView) {
+                    // Nếu số card ít hơn hoặc bằng perView thì hiển thị tất cả, không trượt
+                    cards.forEach(card => {
+                        card.classList.remove('hidden');
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateX(0)';
+                        card.style.transition = 'none';
+                    });
+                    return;
+                }
+
+                // Chuẩn hóa startIndex để luôn nằm trong 0..total-1
+                startIndex = ((startIndex % total) + total) % total;
 
                 cards.forEach((card, index) => {
-                    const visible = index >= currentIndex && index < currentIndex + perView;
+                    // Tính khoảng cách tuần hoàn từ startIndex
+                    const offset = (index - startIndex + total) % total;
+                    const visible = offset < perView;
 
                     if (visible) {
                         card.classList.remove('hidden');
@@ -526,13 +540,13 @@
 
             prevBtn.addEventListener('click', function() {
                 direction = -1;
-                currentIndex -= 1;
+                startIndex -= 1; // trượt lùi 1 card
                 animateVisible();
             });
 
             nextBtn.addEventListener('click', function() {
                 direction = 1;
-                currentIndex += 1;
+                startIndex += 1; // trượt tới 1 card
                 animateVisible();
             });
 
