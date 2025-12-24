@@ -16,7 +16,7 @@
             </div>
             <div class="flex items-center space-x-6 ml-auto">
                 <a class="hidden md:block text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="https://app.clipbook.com" target="_blank">Sign In</a>
-                <a class="bg-primary hover:bg-primary-hover text-[#F5F6FA] px-5 py-2.5 rounded-lg text-base font-medium transition-all shadow-lg hover:shadow-primary/50" target="_blank" href="https://cal.com/team/clipbook/demo-with-clipbook">
+                <a class="bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 text-[#F5F6FA] px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-lg hover:shadow-primary/50" target="_blank" href="https://cal.com/team/clipbook/demo-with-clipbook">
                     Schedule a Demo
                 </a>
             </div>

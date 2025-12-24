@@ -20,7 +20,7 @@
             </p>
             <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-16">
                 <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email"/>
-                <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all" href="#">
+                <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all text-sm" href="#">
                     Start Monitoring
                 </a>
             </div>
@@ -55,20 +55,21 @@
     <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4 text-base">
-                <p class="font-medium text-gray-500 dark:text-gray-400 mb-4 md:mb-0">
+                <p class="font-medium" style="color: rgb(220, 220, 220);">
                     Trusted by the world's leading communications and public affairs teams.
                 </p>
-                <a class="font-medium text-gray-900 dark:text-gray-400 flex items-center hover:underline" href="#">
+                <a class="font-medium flex items-center hover:underline" style="color: rgb(220, 220, 220);" href="#">
                     See case studies <span class="material-icons text-base ml-1">arrow_forward</span>
                 </a>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert text-[#63636A]">
-                <div class="font-serif font-bold text-2xl tracking-widest">CENTER FOR</div>
-                <div class="font-sans font-bold text-3xl tracking-tighter">BCG</div>
-                <div class="font-mono text-xl uppercase tracking-widest border-b-2 border-current pb-1">FRONTWOOD</div>
-                <div class="font-sans font-bold text-2xl flex items-center gap-1"><span class="w-4 h-4 bg-current rounded-full"></span> OneMain</div>
-                <div class="flex items-center gap-2 text-left text-sm font-semibold leading-tight"><div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center">S</div>State of<br/>Delaware</div>
-                <div class="font-serif font-bold text-2xl">ABR</div>
+
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center opacity-60 grayscale dark:invert">
+                <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+                <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+                <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+                <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+                <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo" class="h-12 w-auto object-contain"/>
+                <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain"/>
             </div>
         </div>
     </section>
