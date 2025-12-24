@@ -84,7 +84,7 @@
     </section>
 
     <!-- Media Intelligence Section -->
-    <section class="py-24 relative">
+    <section id="mediaintelligence" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden relative">
                 <div class="flex-1 relative z-10">
@@ -155,7 +155,7 @@
     </section>
 
     <!-- Reporting Section -->
-    <section class="py-24 relative">
+    <section id="reporting" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
@@ -226,7 +226,7 @@
     </section>
 
     <!-- Analysis Section -->
-    <section class="py-24 relative">
+    <section id="analysis" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
@@ -324,7 +324,7 @@
     </section>
 
     <!-- Database Section -->
-    <section class="py-24 relative">
+    <section id="database" class="py-24 relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
                 <div class="flex-1 relative z-10">
