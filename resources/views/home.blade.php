@@ -42,9 +42,9 @@
                             <div class="framer-66a32j-container" style="opacity: 1; transform: translate(-50%, -50%) scale(0.923534, 0.923534); will-change: transform; transform-origin: 50% 50% 0px;">
                                 <div class="framer-JjNbp framer-1aailqk framer-v-1aailqk" data-border="true" data-framer-name="Play" data-highlight="true" tabindex="0" style="--border-bottom-width: 1px; --border-color: rgb(64, 64, 64); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.32); height: 100%; width: 100%; border-radius: 49.9752% / 49.9752%; transform: scale(1.0828, 1.0828) scale(0.923534, 0.923534); transform-origin: 50% 50% 0px;">
                                     <div class="framer-58avS framer-1c6ph31" style="--1df8v9o: rgb(255, 255, 255); transform: translate(-50%, -50%) scale(1.0828, 1.0828) scale(1, 1); transform-origin: 50% 50% 0px;"></div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -218,17 +218,17 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-                    <div class="relative rounded-xl">
+                    <div class="relative rounded-3xl">
                         <div class="space-y-4 relative">
                             <div class="flex justify-center relative">
                                 <img id="analysis-image" src="https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120" alt="Analysis Image" class="max-w-full h-auto transition-opacity duration-300" />
-                                <button id="analysis-prev-btn" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <button id="analysis-prev-btn" class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="15 18 9 12 15 6"></polyline>
                                     </svg>
                                 </button>
-                                <button id="analysis-next-btn" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <button id="analysis-next-btn" class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                         <polyline points="9 18 15 12 9 6"></polyline>
                                     </svg>
                                 </button>
@@ -259,48 +259,12 @@
                 </div>
                 <div class="flex-1 w-full relative">
                     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
-                    <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
-                        <div class="absolute top-0 left-10 right-10 h-2 bg-gray-200 dark:bg-gray-700 rounded-t-lg opacity-50"></div>
-                        <div class="absolute top-2 left-6 right-6 h-2 bg-gray-300 dark:bg-gray-600 rounded-t-lg opacity-70"></div>
-                        <div class="bg-white dark:bg-[#151725] rounded-t-lg p-6 min-h-[400px]">
-                            <div class="flex items-center gap-2 mb-4 text-gray-500 dark:text-gray-400 text-sm">
-                                <span>Sent from Clipbook</span>
-                            </div>
-                            <div class="flex flex-wrap gap-2 mb-6">
-                                <span class="text-gray-400 text-sm py-1">Sent to:</span>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKQyL5Q3skVGmRUgRce9tMVM48EZgQ9f6HAIv-gq5wz5ne0-PiF6rbNJi3J9V5dmZ9eV7o9K3QaS1hMfDTd-Oe5XFQb-c4u9SoXWOCk2zmgr8OiigoxZuYZfDkrXDcIUDJwuRDt2uWBhsGZ6Dn277af4uklfoQzp25zyvPe9YnYF1upS7cjHCYhMSXauWvLhxkjdo8vmKN4LVL8n6mSWJuch3dXC1VsOYLnbz8rAv002TwKL3Wxo1RFgpOy5iyV318QKYDhyV0tx0"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Kara CEO</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnv-SxDWmlRY6kndOqr_h67IHPquUzeW9tprfT1MWMIDdOiGD2oo_O4Z-hUkjC7h6I2KRNyDwdQgPichKrXG8UlEc-YaKhCQ1VZgq2JKYQ9KoFwEGi5blDCzfgyhhIhPAf7c-Oewlf8xa3mlsRnsSTik5cACuMJ895BA5Ebv7QerAucRbduB_y1UVwtUn1F07yGfwrG2E7AHJYMAEqVrGP2gFHvJaF8Jn_1kQnNqHwhpkod57xVdS37e6_5ovRB3Ez4PVPeLVc4XY"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Amy VP</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-full border border-gray-200 dark:border-gray-700">
-                                    <img alt="User" class="w-5 h-5 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPX3XnEAhu9VJLWSilTzz86kEAHHAJLMs2Br-sAo__IbW9ATsAVdc8er-aPgIyWIsLfvZHvPE696CQCAMVQahnT1Lpr_ukDE94c2SrJakjZZNt9KREDyXPfCdPlZm3AyhHGAtQHgMo-aivtwGesssON5y_SMQjAQd2MR0JnE4i5QxDhv1yIjMTf8Y7-SDfiskD_iYEbCea6EQJ3M083w6KfjE4o3qcWsJp-uvxw8ITvYUy44alrlOJIYHdrMo2azzJ1YYqMnc6laM"/>
-                                    <span class="text-xs text-gray-700 dark:text-gray-200 font-medium">Devin COO</span>
-                                </div>
-                            </div>
-                            <hr class="border-gray-200 dark:border-gray-700 mb-6"/>
-                            <div class="flex items-center gap-2 mb-4">
-                                <div class="w-8 h-8 bg-blue-600 text-white rounded flex items-center justify-center font-bold text-sm">C</div>
-                                <span class="font-bold text-lg text-gray-900 dark:text-white">Clipbook</span>
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-800/50 rounded p-3 mb-6 flex justify-between items-center">
-                                <span class="text-xs font-bold uppercase tracking-wider text-gray-700 dark:text-gray-300">Today's Report</span>
-                                <span class="text-xs text-gray-500">7:22 AM</span>
-                            </div>
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Good Morning,</h3>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 mb-6">Here is your intelligence report for today</p>
-                            <div class="bg-gray-50 dark:bg-[#1e2030] rounded-lg p-4 border border-gray-200 dark:border-gray-700">
-                                <div class="flex justify-between items-center mb-3">
-                                    <span class="font-serif font-bold text-gray-800 dark:text-gray-200 text-xs">Liberty Tribune</span>
-                                    <span class="text-[10px] text-gray-400">Monday, Oct 16</span>
-                                </div>
-                                <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 leading-snug">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone...</p>
-                            </div>
-                        </div>
+                    <div class="relative rounded-xl overflow-hidden shadow-2xl">
+                        <img
+                            src="https://framerusercontent.com/images/DEIQaC2ZLch4dnMtJAhKd1mAjHI.png?scale-down-to=1024&width=2764&height=1880"
+                            alt="Database preview"
+                            class="w-full h-full object-cover"
+                        />
                     </div>
                 </div>
             </div>
