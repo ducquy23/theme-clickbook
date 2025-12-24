@@ -388,7 +388,7 @@
                     </svg>
                 </button>
 
-                <div class="relative h-[500px] md:h-[600px] lg:h-[700px]">
+                <div class="relative h-[400px] md:h-[500px] lg:h-[600px]">
                     <div id="customer-stage" class="relative h-full">
                         <!-- Slide 1 -->
                         <div
