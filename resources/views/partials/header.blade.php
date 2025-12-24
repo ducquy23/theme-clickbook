@@ -83,8 +83,8 @@
 
 <!-- Mobile Menu Overlay -->
 <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-[100] hidden md:hidden" style="display: none;">
-    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-[#151725] shadow-xl transform -translate-x-full transition-transform duration-300 z-[100] overflow-y-auto">
-        <div class="p-6">
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-[85%] max-w-[320px] bg-[#151725] shadow-xl transform -translate-x-full transition-transform duration-300 z-[100] overflow-y-auto">
+        <div class="p-4 sm:p-6">
             <!-- Header with logo and close button -->
             <div class="flex items-center justify-between mb-8">
                 <a href="{{ route('home') }}" class="flex items-center gap-2">
