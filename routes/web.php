@@ -13,3 +13,7 @@ Route::get('/company-careers', function () {
 Route::get('/customer-stories', function () {
     return view('customer');
 })->name('customer-stories');
+
+Route::get('/resources', function () {
+    return view('resources');
+})->name('resources');
