@@ -5,7 +5,7 @@
     @endif
     <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center h-20">
-            <div class="flex items-center gap-8">
+            <div class="flex items-center gap-8 flex-1">
                 <a href="{{ route('home') }}">
                     <div class="flex items-center gap-2">
                         <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo"
@@ -69,11 +69,132 @@
             </div>
             <div class="flex items-center space-x-6 ml-auto">
                 <a class="hidden md:block text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="https://app.clipbook.com" target="_blank">Sign In</a>
-                <a class="bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 text-[#F5F6FA] px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-lg hover:shadow-primary/50" target="_blank" href="https://cal.com/team/clipbook/demo-with-clipbook">
+                <a class="hidden md:block bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 text-[#F5F6FA] px-5 py-2.5 rounded-lg text-sm font-medium transition-all shadow-lg hover:shadow-primary/50" target="_blank" href="https://cal.com/team/clipbook/demo-with-clipbook">
+                    Schedule a Demo
+                </a>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-toggle" class="md:hidden text-[#F5F6FA] p-2">
+                    <span class="material-icons text-2xl">menu</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/50 z-50 hidden md:hidden">
+    <div id="mobile-menu" class="fixed top-0 left-0 h-full w-80 bg-[#151725] shadow-xl transform -translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+        <div class="p-6">
+            <!-- Header with logo and close button -->
+            <div class="flex items-center justify-between mb-8">
+                <a href="{{ route('home') }}" class="flex items-center gap-2">
+                    <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo"
+                         class="w-8 h-8 object-contain"/>
+                    <span class="font-bold text-xl tracking-tight text-[#F5F6FA]">Clipbook</span>
+                </a>
+                <button id="mobile-menu-close" class="text-[#F5F6FA] p-2">
+                    <span class="material-icons text-2xl">close</span>
+                </button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex flex-col space-y-1">
+                <!-- Products -->
+                <div class="mobile-menu-item">
+                    <a class="flex items-center justify-between text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors py-3" href="#">
+                        <span>Products</span>
+                        <span class="material-icons text-sm">keyboard_arrow_down</span>
+                    </a>
+                    <div class="mobile-submenu hidden pl-4 mt-2 space-y-1">
+                        <a href="#mediaintelligence" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Media Intelligence</a>
+                        <a href="#reporting" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Reporting</a>
+                        <a href="#analysis" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Analysis</a>
+                        <a href="#database" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Database</a>
+                    </div>
+                </div>
+
+                <!-- Customers -->
+                <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors py-3" href="{{ route('customer-stories') }}">Customers</a>
+
+                <!-- Resources -->
+                <div class="mobile-menu-item">
+                    <a class="flex items-center justify-between text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors py-3" href="{{ route('resources') }}">
+                        <span>Resources</span>
+                        <span class="material-icons text-sm">keyboard_arrow_down</span>
+                    </a>
+                    <div class="mobile-submenu hidden pl-4 mt-2 space-y-1">
+                        <a href="{{ route('webinars') }}" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Webinars</a>
+                        <a href="{{ route('resources') }}" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Blog</a>
+                        <a href="{{ route('customer-stories') }}" class="block text-sm text-gray-400 hover:text-[#F5F6FA] py-2">Customer Stories</a>
+                    </div>
+                </div>
+
+                <!-- Company & Careers -->
+                <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors py-3" href="{{ route('company-careers') }}">Company &amp; Careers</a>
+            </div>
+
+            <!-- Sign In -->
+            <div class="mt-8 pt-8 border-t border-gray-700">
+                <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors block py-3" href="https://app.clipbook.com" target="_blank">Sign In</a>
+            </div>
+
+            <!-- Schedule a Demo Button -->
+            <div class="mt-6">
+                <a class="block w-full bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 text-[#F5F6FA] px-5 py-3 rounded-lg text-sm font-medium text-center transition-all shadow-lg" target="_blank" href="https://cal.com/team/clipbook/demo-with-clipbook">
                     Schedule a Demo
                 </a>
             </div>
         </div>
     </div>
-</nav>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('mobile-menu-toggle');
+        const menuClose = document.getElementById('mobile-menu-close');
+        const menuOverlay = document.getElementById('mobile-menu-overlay');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuItems = document.querySelectorAll('.mobile-menu-item');
+
+        // Toggle menu
+        menuToggle?.addEventListener('click', function() {
+            menuOverlay.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenu.classList.remove('-translate-x-full');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        });
+
+        // Close menu
+        function closeMenu() {
+            mobileMenu.classList.add('-translate-x-full');
+            setTimeout(() => {
+                menuOverlay.classList.add('hidden');
+            }, 300);
+            document.body.style.overflow = '';
+        }
+
+        menuClose?.addEventListener('click', closeMenu);
+        menuOverlay?.addEventListener('click', function(e) {
+            if (e.target === menuOverlay) {
+                closeMenu();
+            }
+        });
+
+        // Toggle submenu
+        menuItems.forEach(item => {
+            const link = item.querySelector('a');
+            const submenu = item.querySelector('.mobile-submenu');
+            const arrow = link.querySelector('.material-icons');
+
+            link?.addEventListener('click', function(e) {
+                if (submenu) {
+                    e.preventDefault();
+                    submenu.classList.toggle('hidden');
+                    arrow.style.transform = submenu.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                }
+            });
+        });
+    });
+</script>
 
