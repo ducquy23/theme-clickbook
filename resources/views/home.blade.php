@@ -107,46 +107,29 @@
                     <div class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
                     <div class="relative bg-white dark:bg-[#0f111a] border border-gray-200 dark:border-gray-800 rounded-xl p-6 shadow-2xl">
                         <div class="space-y-4">
-                            <div class="bg-gray-50 dark:bg-[#1a1d2d] rounded-lg p-4 border border-gray-100 dark:border-gray-700/50 relative overflow-hidden">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-gray-300 dark:bg-gray-600"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Liberty Tribune</span>
-                                    </div>
-                                    <span class="text-[10px] text-gray-400">May 4, 2025 11:23 AM</span>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">Venture Capital Surges as AI Startups Secure Record Funding in 2025</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">Investors poured over $30 billion into AI startups in the first quarter of 2025 alone, with key sectors like healthcare...</p>
-                            </div>
-                            <div class="bg-white dark:bg-[#23273a] rounded-lg p-4 border border-blue-500/30 shadow-lg relative z-10 translate-x-2 -translate-y-2 ring-1 ring-blue-500/20">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-orange-400"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Capitol Newswire</span>
-                                    </div>
-                                    <span class="text-[10px] text-gray-400">May 4, 2025 3:35 PM</span>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">AI Adoption Surges: 89% of Small Businesses Now Rely on Artificial Intelligence</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">A wave of digital transformation is sweeping across the business world, with 89% of small businesses already integrating...</p>
-                                <button class="absolute -right-3 top-1/2 -translate-y-1/2 w-8 h-8 bg-gray-900 dark:bg-black rounded-full flex items-center justify-center border border-gray-700">
-                                    <span class="material-icons text-white text-sm">chevron_right</span>
-                                </button>
-                            </div>
-                            <div class="bg-gray-50 dark:bg-[#1a1d2d] rounded-lg p-4 border border-gray-100 dark:border-gray-700/50 relative overflow-hidden opacity-60">
-                                <div class="flex justify-between items-start mb-2">
-                                    <div class="flex items-center gap-2">
-                                        <div class="w-5 h-5 rounded bg-red-400"></div>
-                                        <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">Union Times Media</span>
-                                    </div>
-                                </div>
-                                <h4 class="text-sm font-bold text-gray-900 dark:text-white mb-2">Federal Agencies Embrace Automation to Boost Transparency</h4>
-                                <p class="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">New White House policies urge federal agencies to adopt innovative AI solutions...</p>
+                            <div class="flex justify-center">
+                                <img src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024" alt="Main Image" class="max-w-full h-auto" />
                             </div>
                         </div>
-                        <div class="mt-6 flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-                            <span class="px-3 py-1 rounded-full bg-gray-800 text-white text-xs font-medium flex items-center gap-1"><span class="material-icons text-[10px]">article</span> News</span>
-                            <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1"><span class="material-icons text-[10px]">share</span> Social</span>
-                            <span class="px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1"><span class="material-icons text-[10px]">gavel</span> Policy</span>
+                        <div class="mt-6 flex gap-2 overflow-x-auto p-2 scrollbar-hide bg-[rgb(34,36,52)] rounded-[21px] opacity-100">
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-800 text-white text-xs font-medium flex items-center gap-1">
+                                <span class="material-icons text-[10px]">article</span> News
+                            </span>
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">share</span> Social
+                            </span>
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">gavel</span> Policy
+                            </span>
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">tv</span> Broadcasts
+                            </span>
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">podcasts</span> Podcasts
+                            </span>
+                            <span class="px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
+                                <span class="material-icons text-[10px]">email</span> Newsletters
+                            </span>
                         </div>
                     </div>
                 </div>
