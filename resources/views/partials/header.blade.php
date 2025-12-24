@@ -42,7 +42,28 @@
                         </div>
                     </div>
                     <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="{{ route('customer-stories') }}">Customers</a>
-                    <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="{{ route('resources') }}">Resources</a>
+                    <div class="relative group">
+                        <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors cursor-pointer flex items-center gap-1" href="{{ route('resources') }}">
+                            Resources
+                            <span class="material-icons text-sm">keyboard_arrow_down</span>
+                        </a>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-white dark:bg-[#151725] border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <div class="py-2">
+                                <a href="{{ route('webinars') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-[#F5F6FA] hover:bg-gray-50 dark:hover:bg-[#1E2030] transition-colors">
+                                    <span class="material-icons text-lg">cast</span>
+                                    <span>Webinars</span>
+                                </a>
+                                <a href="{{ route('resources') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-[#F5F6FA] hover:bg-gray-50 dark:hover:bg-[#1E2030] transition-colors">
+                                    <span class="material-icons text-lg">article</span>
+                                    <span>Blog</span>
+                                </a>
+                                <a href="{{ route('customer-stories') }}" class="flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-[#F5F6FA] hover:bg-gray-50 dark:hover:bg-[#1E2030] transition-colors">
+                                    <span class="material-icons text-lg">book</span>
+                                    <span>Customer Stories</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                     <a class="text-base font-medium text-[#F5F6FA] hover:text-primary transition-colors" href="{{ route('company-careers') }}">Company &amp; Careers</a>
                 </div>
             </div>

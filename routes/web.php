@@ -17,3 +17,7 @@ Route::get('/customer-stories', function () {
 Route::get('/resources', function () {
     return view('resources');
 })->name('resources');
+
+Route::get('/webinars', function () {
+    return view('webinars');
+})->name('webinars');

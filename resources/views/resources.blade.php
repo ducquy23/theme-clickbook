@@ -1,11 +1,45 @@
 @extends('layouts.app')
 
 @push('styles')
+<link rel="stylesheet" href="{{ asset('css/customer.css') }}">
 <style>
     .resource-filter-btn.active {
         background: #3b36db;
         color: white;
         border-color: #3b36db;
+    }
+    .resources-hero-section {
+        background: linear-gradient(180deg, rgba(7, 11, 26, 0.98) 0%, rgba(5, 8, 20, 0.96) 45%, rgba(3, 5, 14, 0.94) 100%), radial-gradient(80% 90% at 20% 15%, rgba(77, 122, 255, 0.16) 0%, rgba(7, 10, 24, 0) 60%), radial-gradient(60% 60% at 80% 5%, rgba(111, 167, 255, 0.12) 0%, rgba(6, 9, 22, 0) 50%);
+        background-blend-mode: screen, normal, normal;
+        position: relative;
+        overflow: hidden;
+    }
+    .resources-hero-section::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(2, 4, 12, 0.55) 0%, rgba(2, 5, 14, 0.82) 55%, rgba(2, 4, 12, 0.94) 100%);
+        z-index: 0;
+    }
+    .resources-hero-section .bg-dots {
+        background-image: radial-gradient(#1d4ed8 1px, transparent 1px);
+        background-size: 22px 22px;
+    }
+    .resources-hero-title {
+        position: relative;
+    }
+    .resources-hero-title::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 150%;
+        background: radial-gradient(ellipse 80% 100% at 0% 50%, rgba(77, 122, 255, 0.5) 0%, rgba(77, 122, 255, 0.3) 25%, rgba(77, 122, 255, 0.15) 50%, transparent 80%);
+        filter: blur(50px);
+        z-index: -1;
+        pointer-events: none;
     }
 </style>
 @endpush
@@ -13,55 +47,55 @@
 @section('content')
 <div class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white min-h-screen">
     <!-- Hero Section -->
-    <section class="relative pt-24 pb-12 overflow-hidden">
-        <div class="absolute inset-0 z-0 opacity-20 dark:opacity-10 pointer-events-none" style="background-image: radial-gradient(#4f46e5 1px, transparent 1px); background-size: 24px 24px;"></div>
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section class="resources-hero-section relative pt-32 pb-16 overflow-hidden">
+        <div class="absolute inset-0 bg-dots opacity-30 pointer-events-none z-0"></div>
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
                 <span class="text-green-600 dark:text-[#b4ff99] text-sm font-medium tracking-wide uppercase mb-4 block">Resources</span>
-                <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-gray-900 dark:text-white">
+                <h1 class="resources-hero-title text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-gray-900 dark:text-white">
                     Resource Library
                 </h1>
-                <p class="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-lg">
+                <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-lg leading-relaxed">
                     Explore hundreds of resources to level up your media game.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3 max-w-lg">
-                    <input class="flex-grow bg-white dark:bg-[#1a1c2e] border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 dark:placeholder-gray-500 text-sm" placeholder="What's your work email?" type="email"/>
-                    <button class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-3 rounded-lg transition-colors whitespace-nowrap text-sm">
+                    <input class="flex-grow bg-white dark:bg-[#1a1c2e] border border-gray-300 dark:border-gray-700 text-gray-900 dark:text-white rounded-lg px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-primary placeholder-gray-500 dark:placeholder-gray-400 text-sm" placeholder="What's your work email?" type="email"/>
+                    <button class="bg-primary hover:bg-primary-hover text-white font-medium px-6 py-3.5 rounded-lg transition-colors whitespace-nowrap text-sm shadow-lg shadow-primary/20">
                         Unlock Media Insights
                     </button>
                 </div>
             </div>
-            <div class="relative hidden lg:block h-[400px]">
-                <div class="absolute top-0 right-10 w-72 bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border p-5 rounded-xl shadow-lg transform translate-y-4 opacity-60 scale-90">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="material-icons text-gray-400">article</span>
-                        <span class="text-sm font-medium text-gray-500">Customer Stories</span>
+            <div class="relative hidden lg:block h-[600px]">
+                <div class="absolute top-0 right-0 w-96 bg-white dark:bg-[#1a1c2e] border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-lg transform translate-y-4 opacity-60 scale-90">
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="material-icons text-gray-400 text-xl">article</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400">Customer Stories</span>
                     </div>
-                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full mb-2"></div>
-                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-full mb-3"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
                 </div>
-                <div class="absolute top-20 right-24 w-80 bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border p-6 rounded-xl shadow-2xl z-10">
-                    <div class="flex items-center gap-2 mb-5">
-                        <span class="material-icons text-gray-400">book</span>
-                        <span class="text-sm font-medium text-gray-300">Guides</span>
+                <div class="absolute top-24 right-12 w-[420px] bg-white dark:bg-[#1a1c2e] border border-gray-200 dark:border-gray-700 p-7 rounded-xl shadow-2xl z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="material-icons text-gray-400 text-xl">book</span>
+                        <span class="text-base font-medium text-gray-300 dark:text-gray-200">Guides</span>
                     </div>
                     <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-full mb-3"></div>
                     <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-3/4"></div>
                 </div>
-                <div class="absolute top-52 right-10 w-72 bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border p-5 rounded-xl shadow-lg transform translate-y-4 opacity-60 scale-90">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="material-icons text-gray-400">rss_feed</span>
-                        <span class="text-sm font-medium text-gray-500">Blog</span>
+                <div class="absolute top-56 right-0 w-96 bg-white dark:bg-[#1a1c2e] border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-lg transform translate-y-4 opacity-60 scale-90">
+                    <div class="flex items-center gap-3 mb-5">
+                        <span class="material-icons text-gray-400 text-xl">rss_feed</span>
+                        <span class="text-base font-medium text-gray-500 dark:text-gray-400">Blog</span>
                     </div>
-                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-full mb-2"></div>
-                    <div class="h-3 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-full mb-3"></div>
+                    <div class="h-4 bg-gray-200 dark:bg-gray-700 rounded w-2/3"></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Filter Section -->
-    <section class="pb-8 pt-4 sticky top-20 z-40 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+    <section class="pb-8 pt-4 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col items-center gap-8">
                 <div class="flex flex-wrap items-center gap-4 justify-center">
@@ -70,6 +104,9 @@
                     </button>
                     <button class="resource-filter-btn px-6 py-3 rounded-lg text-base font-medium text-gray-600 dark:text-gray-300 bg-transparent border border-gray-300 dark:border-surface-border hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white/5 transition-all" data-filter="customer-stories">
                         Customer Stories
+                    </button>
+                    <button class="resource-filter-btn px-6 py-3 rounded-lg text-base font-medium text-gray-600 dark:text-gray-300 bg-transparent border border-gray-300 dark:border-surface-border hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white/5 transition-all" data-filter="guides">
+                        Guides
                     </button>
                     <button class="resource-filter-btn px-6 py-3 rounded-lg text-base font-medium text-gray-600 dark:text-gray-300 bg-transparent border border-gray-300 dark:border-surface-border hover:border-gray-400 dark:hover:border-gray-500 hover:bg-white/5 transition-all" data-filter="webinars">
                         Webinars
@@ -95,12 +132,8 @@
             <h2 class="text-xl font-medium text-green-600 dark:text-[#b4ff99] mb-8">Customer Stories</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-b from-blue-600 to-blue-900 h-56 flex items-center justify-center p-8 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-blue-900 opacity-50 mix-blend-overlay"></div>
-                        <div class="relative z-10 bg-white p-4">
-                            <h3 class="text-5xl font-bold text-blue-900 tracking-tighter">50</h3>
-                            <div class="text-xs uppercase tracking-[0.3em] text-blue-900 mt-1 text-center font-bold">State</div>
-                        </div>
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/eJ0Fdf5V6sEs0GpkuDdeVQI46Nk.png?scale-down-to=512&width=840&height=840" alt="50 State" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -119,11 +152,8 @@
                 </div>
 
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-br from-cyan-600 to-blue-800 h-56 flex items-center justify-center p-8 relative">
-                        <div class="text-center text-white">
-                            <div class="text-2xl font-light tracking-widest uppercase border-b border-white/30 pb-1 mb-1">Frontwood</div>
-                            <div class="text-lg font-light tracking-widest uppercase">Strategies</div>
-                        </div>
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/nENezD1jn1xxr6D40vgJTGLIYk.png?scale-down-to=512&width=840&height=840" alt="Frontwood Strategies" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -142,15 +172,8 @@
                 </div>
 
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-tr from-blue-700 to-indigo-900 h-56 flex items-center justify-center p-8 relative">
-                        <div class="flex items-center gap-3">
-                            <div class="w-16 h-16 rounded-full bg-white border-4 border-yellow-500 flex items-center justify-center">
-                                <div class="text-[8px] text-center font-serif leading-none text-gray-800">STATE<br/>OF<br/>DELAWARE</div>
-                            </div>
-                            <div class="text-white text-xl font-serif leading-tight">
-                                State of<br/>Delaware
-                            </div>
-                        </div>
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/AuyACwK5UHjwxseYRp0FgW2Hh4.png?scale-down-to=512&width=840&height=840" alt="State of Delaware" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -164,6 +187,92 @@
                         </p>
                         <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="{{ route('customer-stories') }}">
                             Read customer story
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guides Section -->
+        <section class="resource-section" data-type="guides">
+            <h2 class="text-xl font-medium text-green-600 dark:text-[#b4ff99] mb-8">Guides</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/hwbablNkI2hdcs6XCDeopq081g.png?scale-down-to=512&width=3840&height=2160" alt="Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">PR/Communications</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-3">
+                            Complete Guide to Modern PR Strategies
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Learn the essential strategies for building effective PR campaigns in today's digital landscape.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Guide
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/J7w1FP0YcSGmZmGixO7JFkzrp4Y.png?scale-down-to=512&width=3840&height=2160" alt="Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">Public Affairs</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-3">
+                            Public Affairs Communication Playbook
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Master the art of public affairs communication and stakeholder engagement.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Guide
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/kREKn3CNEbp3LoYqdHApixdrKd0.png?scale-down-to=512&width=3200&height=1800" alt="Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">Media Intelligence</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-3">
+                            Media Intelligence and Analytics Guide
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Discover how to leverage media intelligence to drive strategic decision-making.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Guide
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-56 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/fDQ18fbpkUHxtBrD2CMFhnQbe8.png?scale-down-to=512&width=3200&height=1800" alt="Guide" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">Measurement & Analytics</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-3">
+                            Measuring PR Impact: Analytics and Reporting Guide
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Learn how to measure and report on the impact of your PR and communications efforts.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Guide
                         </a>
                     </div>
                 </div>
@@ -286,8 +395,8 @@
             <h2 class="text-xl font-medium text-green-600 dark:text-[#b4ff99] mb-8">Blogs</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-br from-purple-600 to-indigo-800 h-48 flex items-center justify-center p-6">
-                        <span class="material-icons text-6xl text-white opacity-50">article</span>
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/KtddP3757RRgO24P8BEXYwnNM.png?scale-down-to=512&width=3840&height=2160" alt="Blog" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -306,8 +415,8 @@
                 </div>
 
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-br from-blue-600 to-cyan-800 h-48 flex items-center justify-center p-6">
-                        <span class="material-icons text-6xl text-white opacity-50">trending_up</span>
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/Jrd7Rny3T9ceBnNnDigC9OMbNo.png?scale-down-to=512&width=3840&height=2160" alt="Blog" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -326,8 +435,8 @@
                 </div>
 
                 <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
-                    <div class="bg-gradient-to-br from-green-600 to-emerald-800 h-48 flex items-center justify-center p-6">
-                        <span class="material-icons text-6xl text-white opacity-50">library_books</span>
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/mzul8EhjMBsNddHIvcc3L7WttY0.jpg?scale-down-to=512&width=5040&height=3360" alt="Blog" class="w-full h-full object-cover">
                     </div>
                     <div class="p-8 flex flex-col flex-grow">
                         <div class="mb-4">
@@ -344,12 +453,69 @@
                         </a>
                     </div>
                 </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/lY3onmbnco5mmmlCoVKRac6yhdI.jpg?scale-down-to=512&width=6000&height=4000" alt="Blog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">Expert Media Insights</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
+                            Building Your Personal Brand: A Strategic Guide for Communications Leaders
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Learn how to establish and grow your personal brand as a communications professional.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Blog
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/ZWZdiVPfJrZFezhIzoGRz0LhNdE.png?scale-down-to=512&width=3840&height=2160" alt="Blog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">Industry Trends</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
+                            The Future of Media Intelligence: Trends and Predictions for 2025
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Explore the latest trends shaping the future of media intelligence and analytics.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Blog
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-surface-dark border border-gray-200 dark:border-surface-border rounded-xl overflow-hidden hover:shadow-xl hover:border-primary/30 transition-all duration-300 group flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://framerusercontent.com/images/89sg3tWLBtFk3cIa3sc4xV3h2E.jpg?scale-down-to=512&width=3000&height=1994" alt="Blog" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="mb-4">
+                            <span class="inline-block px-3 py-1 text-xs font-medium rounded-full bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-white/10">PR/Communications 101</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 line-clamp-2">
+                            Crisis Communication: Best Practices for Modern Organizations
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-6 line-clamp-3 flex-grow">
+                            Discover essential strategies for managing crisis communication in today's fast-paced media environment.
+                        </p>
+                        <a class="block w-full text-center py-3 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-white font-medium hover:bg-gray-50 dark:hover:bg-white/5 transition-colors text-sm" href="#">
+                            Read Blog
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
-
-    <!-- Book Time Section -->
-    @include('partials.book-time')
 </div>
 
 @push('scripts')
