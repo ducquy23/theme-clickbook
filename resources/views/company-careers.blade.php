@@ -252,29 +252,7 @@
         </div>
     </section>
 
-    <section class="py-12 px-4">
-        <div class="max-w-4xl mx-auto rounded-xl overflow-hidden relative bg-blue-600">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-cyan-500 opacity-90"></div>
-            <div class="relative p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
-                <div class="flex-1">
-                    <h2 class="text-2xl font-bold text-white mb-2">Book time with the Clipbook team.</h2>
-                    <p class="text-blue-100 text-xs">
-                        See how the leading public relations, communications, and government affairs teams use Clipbook.
-                    </p>
-                </div>
-                <div class="flex w-full md:w-auto bg-black/30 rounded p-1">
-                    <input
-                        class="bg-transparent border-none text-white placeholder-gray-400 text-sm focus:ring-0 w-full md:w-64 px-3"
-                        placeholder="Enter email address"
-                        type="email"
-                    />
-                    <button class="bg-primary hover:bg-blue-600 text-white text-xs font-medium px-4 py-2 rounded shadow-lg transition-colors whitespace-nowrap">
-                        Schedule a Demo
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.book-time')
 @endsection
 
 

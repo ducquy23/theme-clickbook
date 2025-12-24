@@ -7,55 +7,59 @@
 @section('content')
 
 <div class="customer-page text-text-dark font-sans text-sm leading-relaxed relative">
-    <header class="relative pt-36 pb-16 overflow-hidden hero-sheen hero-section z-10">
+    <header class="relative py-12 overflow-hidden hero-sheen hero-section z-10 flex items-center">
         <div class="absolute inset-0 bg-dots opacity-30 pointer-events-none"></div>
         <div class="absolute inset-0 opacity-10 pointer-events-none hero-bg-img"></div>
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl sm:text-5xl font-bold tracking-tight mb-4 leading-tight text-gradient">
-                Customer Stories
+            <h1 class="customer-title font-bold mb-4">
+                <span data-text-fill="true" class="framer-text" style="background-image: linear-gradient(270deg, rgb(121, 228, 255) 0%, rgb(193, 255, 87) 49.0991%, rgb(255, 196, 87) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">
+                    Customer Stories
+                </span>
             </h1>
-            <p class="text-base sm:text-lg text-gray-300 mb-6 max-w-3xl mx-auto font-normal leading-relaxed">
+            <p class="text-base sm:text-lg customer-subtitle mt-2 mb-6 max-w-3xl mx-auto font-normal leading-relaxed">
                 See how Clipbook accelerates growth for leading communications teams.
             </p>
             <div class="max-w-2xl mx-auto flex flex-col sm:flex-row gap-3 hero-form">
-                <input type="email" placeholder="What's your work email?" class="hero-input w-full flex-grow rounded-md px-5 py-3.5 text-sm sm:text-base shadow-lg"/>
-                <button class="hero-btn w-full sm:w-auto text-white px-6 py-3.5 rounded-md font-medium text-sm sm:text-base transition whitespace-nowrap shadow-xl shadow-indigo-500/35">
+                <input class="flex-1 bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="What's your work email?" type="email"/>
+                <a class="block rounded-lg p-3 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all" href="#">
                     Start Monitoring
-                </button>
+                </a>
             </div>
         </div>
     </header>
 
-    <section class="trusted-section relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center mt-2 mb-10">
-        <p class="text-gray-400 text-xs sm:text-sm mb-4 tracking-[0.18em] uppercase">Trusted by the world's leading public relations, government affairs, and communications teams.</p>
-        <div class="logo-marquee mt-4">
-            <div class="logo-track">
-                <div class="logo-pill text-xs font-serif uppercase tracking-[0.35em]">Frontwood&nbsp;Strategies</div>
-                <div class="logo-pill text-lg font-bold">OneMain <span class="font-normal text-xs block leading-tight">Financial.</span></div>
-                <div class="logo-pill flex flex-col items-center gap-2 text-[11px] font-semibold uppercase leading-tight">
-                    <div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center text-[8px]">DE</div>
-                    <span class="leading-tight text-center">State of Delaware</span>
-                </div>
-                <div class="logo-pill font-black text-lg uppercase tracking-tighter">American&nbsp;Prairie</div>
-                <div class="logo-pill font-serif text-xl">ABR</div>
-                <div class="logo-pill text-xs font-semibold uppercase tracking-wide">Weber&nbsp;Shandwick</div>
-                <div class="logo-pill text-xs font-semibold uppercase tracking-wide">CAQ</div>
-                <!-- duplicate set for seamless loop -->
-                <div class="logo-pill text-xs font-serif uppercase tracking-[0.35em]">Frontwood&nbsp;Strategies</div>
-                <div class="logo-pill text-lg font-bold">OneMain <span class="font-normal text-xs block leading-tight">Financial.</span></div>
-                <div class="logo-pill flex flex-col items-center gap-2 text-[11px] font-semibold uppercase leading-tight">
-                    <div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center text-[8px]">DE</div>
-                    <span class="leading-tight text-center">State of Delaware</span>
-                </div>
-                <div class="logo-pill font-black text-lg uppercase tracking-tighter">American&nbsp;Prairie</div>
-                <div class="logo-pill font-serif text-xl">ABR</div>
-                <div class="logo-pill text-xs font-semibold uppercase tracking-wide">Weber&nbsp;Shandwick</div>
-                <div class="logo-pill text-xs font-semibold uppercase tracking-wide">CAQ</div>
-            </div>
-        </div>
-    </section>
-
     <main class="py-16 relative z-10 customer-main">
+        <section class="trusted-section relative z-10 text-center mb-10 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <p class="text-gray-400 text-xs sm:text-sm mb-4 tracking-[0.18em] uppercase">Trusted by the world's leading public relations, government affairs, and communications teams.</p>
+                <div class="logo-marquee mt-4">
+                    <div class="logo-track">
+                        <div class="logo-pill text-xs font-serif uppercase tracking-[0.35em]">Frontwood&nbsp;Strategies</div>
+                        <div class="logo-pill text-lg font-bold">OneMain <span class="font-normal text-xs block leading-tight">Financial.</span></div>
+                        <div class="logo-pill flex flex-col items-center gap-2 text-[11px] font-semibold uppercase leading-tight">
+                            <div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center text-[8px]">DE</div>
+                            <span class="leading-tight text-center">State of Delaware</span>
+                        </div>
+                        <div class="logo-pill font-black text-lg uppercase tracking-tighter">American&nbsp;Prairie</div>
+                        <div class="logo-pill font-serif text-xl">ABR</div>
+                        <div class="logo-pill text-xs font-semibold uppercase tracking-wide">Weber&nbsp;Shandwick</div>
+                        <div class="logo-pill text-xs font-semibold uppercase tracking-wide">CAQ</div>
+                        <!-- duplicate set for seamless loop -->
+                        <div class="logo-pill text-xs font-serif uppercase tracking-[0.35em]">Frontwood&nbsp;Strategies</div>
+                        <div class="logo-pill text-lg font-bold">OneMain <span class="font-normal text-xs block leading-tight">Financial.</span></div>
+                        <div class="logo-pill flex flex-col items-center gap-2 text-[11px] font-semibold uppercase leading-tight">
+                            <div class="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center text-[8px]">DE</div>
+                            <span class="leading-tight text-center">State of Delaware</span>
+                        </div>
+                        <div class="logo-pill font-black text-lg uppercase tracking-tighter">American&nbsp;Prairie</div>
+                        <div class="logo-pill font-serif text-xl">ABR</div>
+                        <div class="logo-pill text-xs font-semibold uppercase tracking-wide">Weber&nbsp;Shandwick</div>
+                        <div class="logo-pill text-xs font-semibold uppercase tracking-wide">CAQ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 <article class="group bg-card-dark border border-white/10 rounded-lg overflow-hidden shadow-sm hover:shadow-2xl hover:border-white/20 transition-all duration-300 flex flex-col">
@@ -150,27 +154,6 @@
         </div>
     </main>
 
-    <section class="py-16 px-4 sm:px-6 lg:px-8 relative z-10 cta-section">
-        <div class="max-w-7xl mx-auto rounded-3xl overflow-hidden relative border border-white/10">
-            <div class="absolute inset-0 cta-bg-img"></div>
-            <div class="relative z-10 px-8 py-16 md:px-16 md:py-18 flex flex-col md:flex-row items-center justify-between gap-10">
-                <div class="md:w-2/3">
-                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Book time with the Clipbook team</h2>
-                    <p class="text-blue-50 text-lg md:text-xl max-w-2xl font-normal leading-relaxed">
-                        Experience how leading teams use Clipbook to monitor trends, measure impact, and sharpen messaging across every channel.
-                    </p>
-                </div>
-                <div class="md:w-1/3 w-full">
-                    <div class="bg-black/20 backdrop-blur-md p-2 rounded-lg flex items-center border border-white/10 shadow-xl">
-                        <input type="text" placeholder="Enter email address" class="bg-transparent border-none text-white placeholder-blue-100 focus:ring-0 w-full px-4 text-sm"/>
-                        <button class="btn-gradient text-white px-6 py-3 rounded text-sm font-bold whitespace-nowrap transition shadow-lg shadow-indigo-500/30">
-                            Schedule a Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 @endsection
 
