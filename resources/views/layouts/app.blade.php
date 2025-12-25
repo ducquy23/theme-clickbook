@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Clipbook - AI Research for Public Relations</title>
+    <title>@yield('title', 'Clipbook - AI Research for Public Relations')</title>
     <link rel="icon" type="image/svg+xml" href="{{ asset('assets/images/logo.svg') }}"/>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
@@ -121,7 +121,7 @@
 <!-- Main Content -->
 @yield('content')
 
-@include('partials.footer')
+{{-- @include('partials.footer') --}}
 @stack('scripts')
 </body>
 </html>

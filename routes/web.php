@@ -21,3 +21,7 @@ Route::get('/resources', function () {
 Route::get('/webinars', function () {
     return view('webinars');
 })->name('webinars');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
