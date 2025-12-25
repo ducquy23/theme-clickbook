@@ -1,5 +1,5 @@
 <!-- Shared CTA -->
-@if (!request()->routeIs('home'))
+@if (!request()->routeIs('home') && !request()->routeIs('webinars'))
     <div class="relative z-20">
         @include('partials.book-time')
     </div>

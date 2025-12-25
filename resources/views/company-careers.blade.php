@@ -208,44 +208,39 @@
     <section class="py-24 bg-gray-50 dark:bg-background-dark border-t border-gray-200 dark:border-gray-900">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-2xl font-bold mb-12 text-center text-gray-900 dark:text-white">Articles and press releases</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-                    <div class="h-48 overflow-hidden relative">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-surface-dark rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors flex flex-col">
+                    <div class="h-56 md:h-64 overflow-hidden relative flex-shrink-0">
                         <img
                             alt="Smiling professional man in white shirt"
                             class="w-full h-full object-cover"
                             src="https://framerusercontent.com/images/0d9Yi9grFbgesep3KfhhOyFUyU.webp?scale-down-to=512&width=2000&height=1333"
                         />
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-sm font-semibold mb-2 text-gray-900 dark:text-white">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-sm font-semibold mb-4 text-gray-900 dark:text-white leading-snug flex-grow">
                             How AI PR startup Clipbook won Mark Cuban's investment from a cold email
                         </h3>
-                        <div class="mt-6">
-                            <a class="inline-block w-full text-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">
-                                Read Article
-                            </a>
-                        </div>
+                        <a class="inline-block w-full text-center px-4 py-2.5 bg-[#3b49df] hover:bg-[#2f3ab2] rounded-lg text-xs font-medium text-white transition-colors" href="#">
+                            Read Article
+                        </a>
                     </div>
                 </div>
-                <div class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
-                    <div class="h-48 bg-gray-100 dark:bg-gray-200 flex items-center justify-center relative">
+                <div class="bg-white dark:bg-surface-dark rounded-lg overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors flex flex-col">
+                    <div class="h-56 md:h-64 bg-gray-100 dark:bg-gray-200 flex items-center justify-center relative flex-shrink-0 overflow-hidden">
                         <img
-                            alt="Smiling professional man in white shirt"
+                            alt="Associated Press logo"
                             class="w-full h-full object-cover"
                             src="https://framerusercontent.com/images/tK5V4cc4ti1dXQx6DRGvIodWh5Y.png?scale-down-to=512&width=1440&height=810"
                         />
                     </div>
-                    <div class="p-6">
-                        <h3 class="text-sm font-semibold mb-2 text-gray-900 dark:text-white">
+                    <div class="p-5 flex flex-col flex-grow">
+                        <h3 class="text-sm font-semibold mb-4 text-gray-900 dark:text-white leading-snug flex-grow">
                             Clipbook Raises $3.3 Million Seed Round to Build the Leading Vertical AI Platform for Communications
                         </h3>
-                        <div class="mt-6">
-                            <a class="inline-block w-full text-center px-4 py-2 border border-gray-300 dark:border-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors" href="#">
-                                Read Article
-                            </a>
-                        </div>
+                        <a class="inline-block w-full text-center px-4 py-2.5 bg-[#3b49df] hover:bg-[#2f3ab2] rounded-lg text-xs font-medium text-white transition-colors" href="#">
+                            Read Article
+                        </a>
                     </div>
                 </div>
             </div>
