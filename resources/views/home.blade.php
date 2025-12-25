@@ -1,323 +1,69 @@
 @extends('layouts.app')
 
 @section('content')
-    <!-- Hero Section -->
-    <section class="relative pt-27 pb-20 overflow-hidden overflow-x-hidden">
-        <div
-            class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.15] pointer-events-none bg-grid-pattern bg-grid"></div>
-        <div
-            class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/20 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="relative z-10 max-w-screen-2xl mx-auto px-4 text-center mt-[180px]">
-            <a class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gray-100 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 text-sm font-medium text-[#F5F6FA] hover:border-primary/50 transition-colors mb-8 backdrop-blur-sm"
-               href="#">
-                <img src="{{ asset('assets/images/logo-removebg.png') }}" alt="Clipbook logo"
-                     class="w-8 h-7 object-contain"/>
-                Clipbook announces <span class="text-green-600 dark:text-green-400"
-                                         style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">$3.3 million</span>
-                seed round
-                <span class="material-icons text-sm">arrow_forward</span>
-            </a>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
-                AI research and analysis for <br/>
-                <span class="text-white">public relations</span>
-            </h1>
-            <p class="text-[rgb(220,220,220)] mb-10 mx-auto leading-relaxed">
-                Clipbook monitors, aggregates, and analyzes data from over 1 million media and policy sources, surfacing
-                the most actionable intelligence
-            </p>
-            <div class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-16 px-4">
-                <input
-                    class="flex-1 w-full bg-white dark:bg-surface-dark border border-gray-300 dark:border-gray-700 rounded-lg px-4 py-3 text-gray-900 dark:text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                    placeholder="What's your work email?" type="email"/>
-                <a class="block rounded-lg p-3 pl-5 pr-5 text-white font-semibold bg-[linear-gradient(90deg,rgb(70,110,255)_0%,rgb(40,60,200)_100%)] hover:opacity-90 transition-all text-sm whitespace-nowrap"
-                   href="#">
-                    Start Monitoring
-                </a>
-            </div>
-            <div class="max-w-5xl mx-auto">
-                <div class="framer-xp41rj" data-framer-appear-id="xp41rj" data-framer-name="Hero-image" id="hero-video"
-                     style="will-change: transform; opacity: 1; transform: scale(1.03228);">
-                    <div class="ssr-variant hidden-f6bbzy">
-                        <div class="framer-13qwumg-container">
-                            <div class="framer-FBK81 framer-2w75lq framer-v-2w75lq hover"
-                                 style="height: 100%; width: 100%; border-radius: 10px; opacity: 1;">
-                                <div class="framer-6jkvxi-container" style="opacity: 1;">
-                                    <video
-                                        src="https://framerusercontent.com/assets/FrobVqucBfLyIYdCwmeBzxWPk.mp4"
-                                        loop
-                                        preload="metadata"
-                                        poster="https://framerusercontent.com/images/UokH1Igxry9vYbJrvEsqJpGOv0.png?width=4056&amp;height=2281"
-                                        controls
-                                        playsinline
-                                        style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%">
-                                    </video>
-                                </div>
-                                <div class="framer-66a32j-container"
-                                     style="opacity: 1; transform: translate(-50%, -50%) scale(0.923534, 0.923534); will-change: transform; transform-origin: 50% 50% 0px;">
-                                    <div class="framer-JjNbp framer-1aailqk framer-v-1aailqk" data-border="true"
-                                         data-framer-name="Play" data-highlight="true" tabindex="0"
-                                         style="--border-bottom-width: 1px; --border-color: rgb(64, 64, 64); --border-left-width: 1px; --border-right-width: 1px; --border-style: solid; --border-top-width: 1px; backdrop-filter: blur(8px); background-color: rgba(255, 255, 255, 0.32); height: 100%; width: 100%; border-radius: 49.9752% / 49.9752%; transform: scale(1.0828, 1.0828) scale(0.923534, 0.923534); transform-origin: 50% 50% 0px;">
-                                        <div class="framer-58avS framer-1c6ph31"
-                                             style="--1df8v9o: rgb(255, 255, 255); transform: translate(-50%, -50%) scale(1.0828, 1.0828) scale(1, 1); transform-origin: 50% 50% 0px;"></div>
-                                    </div>
-                    </div>
-                </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Trusted By Section -->
-    <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20 overflow-x-hidden">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4 text-base">
-                <p class="font-medium" style="color: rgb(220, 220, 220);">
-                    Trusted by the world's leading communications and public affairs teams.
-                </p>
-                <a class="font-medium flex items-center hover:underline" style="color: rgb(220, 220, 220);" href="#">
-                    See case studies <span class="material-icons text-base ml-1">arrow_forward</span>
-                </a>
-            </div>
-
-            <div class="overflow-hidden">
-                <div class="flex gap-8 items-center animate-scroll opacity-60 grayscale dark:invert">
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/DlldzajeXBSx7E3wU3tHD3iVp5I.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    <!-- Duplicate for seamless loop -->
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/bypnn6W9rQGsruIFK5ZVgdtUtEY.webp') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/UagVdWviKsnDlXpOz5w3qi1S4.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    <img src="{{ asset('assets/images/see-case-studies/pk63BRZbtdugOY5u2IFm7dtRHv4.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    {{--                    <img src="{{ asset('assets/images/see-case-studies/S0Sra2gqdC5Dnmjmk4xM86wLwH0.png') }}" alt="Logo" class="h-12 w-auto object-contain flex-shrink-0"/>--}}
-                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                    <img src="{{ asset('assets/images/see-case-studies/lfbn10zpkbuteY1CtQxOyirZfWs.png') }}" alt="Logo"
-                         class="h-12 w-auto object-contain flex-shrink-0"/>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.hero-section')
+    @include('partials.trusted-by-section')
 
     <!-- Media Intelligence Section -->
-    <section id="mediaintelligence" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden relative">
-                <div class="flex-1 relative z-10">
-                    <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">Media Intelligence</span>
-                    <h2 class="text-2xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
-                        Automate Research. <br/> Accelerate Growth.
-                    </h2>
-                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
-                        Monitor over 1 million sources across news, TV, radio, social media, podcasts, and policy - all
-                        in one platform.
-                    </p>
-                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
-                        Clipbook's agentic AI goes beyond simple keyword tracking to predictively surface the most
-                        relevant, actionable moments, delivering a precise, relevant, and context-rich briefing tailored
-                        to your team's needs.
-                    </p>
-
-                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]   hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
-                       href="#">
-                        Learn More
-                    </a>
-                </div>
-                <div class="flex-1 w-full relative">
-                    <div
-                        class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-                    <div class="relative rounded-xl">
-                        <div class="space-y-4 relative">
-                            <div class="flex justify-center relative">
-                                <img id="media-image"
-                                     src="https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024"
-                                     alt="Main Image" class="max-w-full h-auto transition-opacity duration-300"/>
-                                <button id="media-prev-btn"
-                                        class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                        <polyline points="15 18 9 12 15 6"></polyline>
-                                    </svg>
-                                </button>
-                                <button id="media-next-btn"
-                                        class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none" stroke="rgb(255, 255, 255)" stroke-width="2" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                        <polyline points="9 18 15 12 9 6"></polyline>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div
-                            class="mt-6 flex gap-2 overflow-x-auto p-2 scrollbar-hide bg-[rgb(34,36,52)] rounded-[21px] opacity-100">
-                            <span data-category="news"
-                                  class="category-pill active px-3 py-1 rounded-full cursor-pointer bg-gray-800 text-white text-xs font-medium flex items-center gap-1">
-                                <span class="material-icons text-[10px]">article</span> News
-                            </span>
-                            <span data-category="social"
-                                  class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-                                <span class="material-icons text-[10px]">share</span> Social
-                            </span>
-                            <span data-category="policy"
-                                  class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-                                <span class="material-icons text-[10px]">gavel</span> Policy
-                            </span>
-                            <span data-category="broadcasts"
-                                  class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-                                <span class="material-icons text-[10px]">tv</span> Broadcasts
-                            </span>
-                            <span data-category="podcasts"
-                                  class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-                                <span class="material-icons text-[10px]">podcasts</span> Podcasts
-                            </span>
-                            <span data-category="newsletters"
-                                  class="category-pill px-3 py-1 rounded-full cursor-pointer bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium border border-gray-200 dark:border-gray-700 flex items-center gap-1">
-                                <span class="material-icons text-[10px]">email</span> Newsletters
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.product-section', [
+        'id' => 'mediaintelligence',
+        'badge' => 'Media Intelligence',
+        'title' => 'Automate Research. <br/> Accelerate Growth.',
+        'description' => 'Monitor over 1 million sources across news, TV, radio, social media, podcasts, and policy - all in one platform.',
+        'description2' => "Clipbook's agentic AI goes beyond simple keyword tracking to predictively surface the most relevant, actionable moments, delivering a precise, relevant, and context-rich briefing tailored to your team's needs.",
+        'imageId' => 'media-image',
+        'imageSrc' => 'https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024',
+        'imageAlt' => 'Main Image',
+        'prevButtonId' => 'media-prev-btn',
+        'nextButtonId' => 'media-next-btn',
+        'showPills' => true,
+        'pills' => [
+            ['category' => 'news', 'icon' => 'article', 'label' => 'News'],
+            ['category' => 'social', 'icon' => 'share', 'label' => 'Social'],
+            ['category' => 'policy', 'icon' => 'gavel', 'label' => 'Policy'],
+            ['category' => 'broadcasts', 'icon' => 'tv', 'label' => 'Broadcasts'],
+            ['category' => 'podcasts', 'icon' => 'podcasts', 'label' => 'Podcasts'],
+            ['category' => 'newsletters', 'icon' => 'email', 'label' => 'Newsletters'],
+        ],
+        'reverse' => false,
+        'buttonStyle' => 'default'
+    ])
 
     <!-- Reporting Section -->
-    <section id="reporting" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
-                <div class="flex-1 relative z-10">
-                    <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">Reporting</span>
-                    <h2 class="text-3xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
-                        Track Comprehensively. <br/> Get Customized Intelligence.
-                    </h2>
-                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
-                        Track any stakeholder, topic, or geography. Get tailored, noise-free reports built for your
-                        team's goals.
-                    </p>
-
-                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
-                        Our platform automatically filters out irrelevant content, ranks insights by importance, and
-                        formats reports visually to align perfectly with your team's objectives.
-                    </p>
-
-                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
-                       href="#">
-                        Learn More
-                    </a>
-                </div>
-                <div class="flex-1 w-full relative">
-                    <div
-                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
-                    <div class="relative dark:border-gray-800 rounded-xl p-1 pt-6 shadow-2xl overflow-hidden">
-                        <div class="">
-                            <div class="space-y-4 relative">
-                                <div class="flex justify-center relative">
-                                    <img id="reporting-image"
-                                         src="https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056"
-                                         alt="Reporting Image"
-                                         class="max-w-full h-auto transition-opacity duration-300"/>
-                                    <button id="reporting-prev-btn"
-                                            class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10 hidden">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="15 18 9 12 15 6"></polyline>
-                                        </svg>
-                                    </button>
-                                    <button id="reporting-next-btn"
-                                            class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full backdrop-filter backdrop-blur-md bg-black/20 hover:bg-black/30 transition-all flex items-center justify-center cursor-pointer z-10">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 24 24" fill="none" stroke="rgb(255, 255, 255)"
-                                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                            <polyline points="9 18 15 12 9 6"></polyline>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    @include('partials.product-section', [
+        'id' => 'reporting',
+        'badge' => 'Reporting',
+        'title' => 'Track Comprehensively. <br/> Get Customized Intelligence.',
+        'description' => "Track any stakeholder, topic, or geography. Get tailored, noise-free reports built for your team's goals.",
+        'description2' => 'Our platform automatically filters out irrelevant content, ranks insights by importance, and formats reports visually to align perfectly with your team\'s objectives.',
+        'imageId' => 'reporting-image',
+        'imageSrc' => 'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
+        'imageAlt' => 'Reporting Image',
+        'prevButtonId' => 'reporting-prev-btn',
+        'nextButtonId' => 'reporting-next-btn',
+        'showPills' => false,
+        'pills' => [],
+        'reverse' => true,
+        'buttonStyle' => 'default'
+    ])
 
     <!-- Analysis Section -->
-    <section id="analysis" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
-        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div
-                class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden">
-                <div class="flex-1 relative z-10">
-                    <span class="text-lime-600 dark:text-lime-400 font-medium mb-4 block" style="background-image: linear-gradient(505deg, rgb(121, 228, 255) 0%, rgb(193, 255, 86) 75.1784%, rgb(255, 195, 86) 100%); -webkit-background-clip: text; background-clip: text; color: transparent;">Analysis</span>
-                    <h2 class="text-3xl md:text-3xl font-bold text-[#D7D7D7] mb-6">
-                        Unlock Insights. Understand Impact.
-                    </h2>
-
-                    <p class="text-[#D7D7D7] text-lg mb-6 leading-relaxed">
-                        Generate detailed analytics on readership, share of voice, sentiment, earned media value,
-                        engagement metrics, and more.
-                    </p>
-
-                    <p class="text-[#D7D7D7] text-lg mb-8 leading-relaxed">
-                        Our natural language prompts and AI data visualization engine makes it effortless to surface the
-                        key metrics that matter most to your team or clients.
-                    </p>
-
-                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
-                       href="#">
-                        Learn More
-                    </a>
-                </div>
-                <div class="flex-1 w-full relative">
-                    <div
-                        class="absolute -inset-10 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-                    <div class="relative rounded-3xl">
-                        <div class="space-y-4 relative">
-                            <div class="flex justify-center relative">
-                                <img id="analysis-image"
-                                     src="https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120"
-                                     alt="Analysis Image" class="max-w-full h-auto transition-opacity duration-300"/>
-                                <button id="analysis-prev-btn"
-                                        class="absolute -left-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                        <polyline points="15 18 9 12 15 6"></polyline>
-                                    </svg>
-                                </button>
-                                <button id="analysis-next-btn"
-                                        class="absolute -right-6 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-10">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                         stroke-linejoin="round">
-                                        <polyline points="9 18 15 12 9 6"></polyline>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                                </div>
-                                </div>
-                            </div>
-    </section>
+    @include('partials.product-section', [
+        'id' => 'analysis',
+        'badge' => 'Analysis',
+        'title' => 'Unlock Insights. Understand Impact.',
+        'description' => 'Generate detailed analytics on readership, share of voice, sentiment, earned media value, engagement metrics, and more.',
+        'description2' => 'Our natural language prompts and AI data visualization engine makes it effortless to surface the key metrics that matter most to your team or clients.',
+        'imageId' => 'analysis-image',
+        'imageSrc' => 'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
+        'imageAlt' => 'Analysis Image',
+        'prevButtonId' => 'analysis-prev-btn',
+        'nextButtonId' => 'analysis-next-btn',
+        'showPills' => false,
+        'pills' => [],
+        'reverse' => false,
+        'buttonStyle' => 'dark'
+    ])
 
     <!-- Database Section -->
     <section id="database" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
@@ -335,11 +81,11 @@
                         surface exactly what you need, when you need it.
                     </p>
 
-                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7]hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
+                    <a class="inline-block px-6 py-3 rounded-lg border border-[rgb(53,40,255)] text-[#D7D7D7] hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors font-medium"
                        href="#">
                         Learn More
                     </a>
-                                </div>
+                </div>
                 <div class="flex-1 w-full relative">
                     <div
                         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
@@ -349,521 +95,73 @@
                             alt="Database preview"
                             class="w-full h-full object-cover"
                         />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    </section>
-
-    <!-- Customer Section -->
-    <section class="py-24 overflow-x-hidden">
-        <div class="w-full px-4 sm:px-8 lg:px-16">
-            <div class="text-center mb-12 max-w-screen-2xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our customers</h2>
-                <p class="text-gray-400 max-w-3xl mx-auto">
-                    Clipbook is the leading AI research and analysis platform for communications and public affairs
-                    teams.
-                </p>
-                        </div>
-
-            <div class="relative max-w-screen-2xl mx-auto">
-                <div class="relative mx-auto w-full max-w-[800px] h-[280px] sm:h-[320px] md:h-[360px] lg:h-[440px]" style="max-width: 800px;">
-                    <!-- Prev button -->
-                    <button
-                        id="customer-prev"
-                        class="absolute left-2 md:-left-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-30"
-                    >
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="15 18 9 12 15 6"></polyline>
-                        </svg>
-                    </button>
-
-                    <!-- Next button -->
-                    <button
-                        id="customer-next"
-                        class="absolute right-2 md:-right-6 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-[#181c2f] border border-[#2c3250] text-[#F5F6FA] shadow-lg hover:bg-[#20263b] transition-all flex items-center justify-center cursor-pointer z-30">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
-                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="9 6 15 12 9 18"></polyline>
-                        </svg>
-                    </button>
-                    <div id="customer-stage" class="relative h-full">
-                        <!-- Slide 1 -->
-                        <div
-                            class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
-                            <div
-                                class="relative h-full rounded-3xl bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
-                                <img
-                                    src="https://framerusercontent.com/images/EMlbPgxWHvqDBM4UzGGR5l9pCQ.png?scale-down-to=1024&width=7252&height=4026"
-                                    alt="Customer use case"
-                                    class="w-full h-full object-contain"
-                                />
-                            </div>
-                                </div>
-
-                        <!-- Slide 2 -->
-                        <div
-                            class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
-                            <div
-                                class="relative h-full rounded-3xl bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
-                                <img
-                                    src="https://framerusercontent.com/images/9M4KT4I7mZ2KbSOmrutDEJdoxE.png?scale-down-to=1024&width=7251&height=4026"
-                                    alt="Customer use case - Public affairs"
-                                    class="w-full h-full object-contain"
-                                />
-                            </div>
-                                </div>
-
-                        <!-- Slide 3 -->
-                        <div
-                            class="customer-slide absolute inset-0 opacity-0 scale-90 transition-all duration-500 ease-out">
-                            <div
-                                class="relative h-full rounded-3xl bg-black/50 backdrop-blur-xl overflow-hidden flex items-center justify-center">
-                                <img
-                                    src="https://framerusercontent.com/images/ZWbVXtVAJJRzJu4BfrDCoHNnBLw.png?scale-down-to=512&width=7251&height=4026"
-                                    alt="Customer use case - Enterprise"
-                                    class="w-full h-full object-contain"
-                                />
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- What our customers are saying Section -->
-    <section class="py-24 bg-background-dark border-t border-gray-900 overflow-x-hidden">
-        <div class="w-full px-4 sm:px-8 lg:px-16">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-white mb-4">What our customers are saying</h2>
-                <p class="text-gray-400">The world's leading organizations rely on Clipbook as their team's intelligence
-                    foundation.</p>
-            </div>
-            <div id="testimonial-grid" class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-5 gap-8">
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
-                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
-                            insights we gather are unmatched in speed and accuracy."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Julia Germain</div>
-                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
-                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
-                            insights we gather are unmatched in speed and accuracy."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Julia Germain</div>
-                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
-                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
-                            insights we gather are unmatched in speed and accuracy."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Julia Germain</div>
-                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
-                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
-                            insights we gather are unmatched in speed and accuracy."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Julia Germain</div>
-                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-bold text-gray-200 text-lg tracking-widest uppercase">CAO <span
-                                class="text-xs normal-case text-gray-500 block">Center for Audit Quality</span></div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has been an indispensable partner for CAQ! The
-                            insights we gather are unmatched in speed and accuracy."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Julia Germain</div>
-                        <div class="text-gray-500 text-xs">Senior Communications Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-black text-gray-200 text-lg uppercase">American<br/>Prairie</div>
-                        <p class="text-gray-300 italic mb-6">"Clipbook has made monitoring press and mentions easier
-                            than ever. I look forward to seeing it in my inbox every morning!"</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Beth Saboe</div>
-                        <div class="text-gray-500 text-xs">Senior Public Relations Manager</div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card bg-surface-dark border border-gray-800 p-8 rounded-2xl flex flex-col justify-between hover:border-gray-600 transition-colors">
-                    <div>
-                        <div class="h-8 mb-6 font-serif italic text-gray-200 text-xl">Frontwood <span
-                                class="block text-xs not-italic font-sans text-gray-500 tracking-widest uppercase">Strategies</span>
-                        </div>
-                        <p class="text-gray-300 italic mb-6">"Our clients see enterprise-grade media insights from a
-                            boutique firm. We're able to punch above our weight because of Clipbook."</p>
-                    </div>
-                    <div>
-                        <div class="font-semibold text-white text-sm">Neil Callahan</div>
-                        <div class="text-gray-500 text-xs">Founder</div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex justify-center gap-4 mt-8">
-                <button
-                    id="testimonial-prev"
-                    class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 bg-black/40 backdrop-blur">
-                    <span class="material-icons text-sm">arrow_back</span>
-                </button>
-                <button
-                    id="testimonial-next"
-                    class="w-10 h-10 rounded-full border border-gray-700 flex items-center justify-center text-gray-400 hover:text-white hover:border-gray-500 bg-black/40 backdrop-blur">
-                    <span class="material-icons text-sm">arrow_forward</span>
-                </button>
-            </div>
-        </div>
-    </section>
+    @include('partials.customer-section')
 
-    <!-- Booking Section -->
+    @php
+        $testimonials = [
+            [
+                'company' => 'CAO',
+                'company_subtitle' => 'Center for Audit Quality',
+                'quote' => 'Clipbook has been an indispensable partner for CAQ! The insights we gather are unmatched in speed and accuracy.',
+                'name' => 'Julia Germain',
+                'title' => 'Senior Communications Manager'
+            ],
+            [
+                'company' => 'CAO',
+                'company_subtitle' => 'Center for Audit Quality',
+                'quote' => 'Clipbook has been an indispensable partner for CAQ! The insights we gather are unmatched in speed and accuracy.',
+                'name' => 'Julia Germain',
+                'title' => 'Senior Communications Manager'
+            ],
+            [
+                'company' => 'CAO',
+                'company_subtitle' => 'Center for Audit Quality',
+                'quote' => 'Clipbook has been an indispensable partner for CAQ! The insights we gather are unmatched in speed and accuracy.',
+                'name' => 'Julia Germain',
+                'title' => 'Senior Communications Manager'
+            ],
+            [
+                'company' => 'CAO',
+                'company_subtitle' => 'Center for Audit Quality',
+                'quote' => 'Clipbook has been an indispensable partner for CAQ! The insights we gather are unmatched in speed and accuracy.',
+                'name' => 'Julia Germain',
+                'title' => 'Senior Communications Manager'
+            ],
+            [
+                'company' => 'CAO',
+                'company_subtitle' => 'Center for Audit Quality',
+                'quote' => 'Clipbook has been an indispensable partner for CAQ! The insights we gather are unmatched in speed and accuracy.',
+                'name' => 'Julia Germain',
+                'title' => 'Senior Communications Manager'
+            ],
+            [
+                'company' => 'American<br/>Prairie',
+                'company_style' => 'font-black uppercase',
+                'quote' => 'Clipbook has made monitoring press and mentions easier than ever. I look forward to seeing it in my inbox every morning!',
+                'name' => 'Beth Saboe',
+                'title' => 'Senior Public Relations Manager'
+            ],
+            [
+                'company' => '<span class="font-serif italic">Frontwood</span> <span class="block text-xs not-italic font-sans text-gray-500 tracking-widest uppercase">Strategies</span>',
+                'company_style' => '',
+                'quote' => 'Our clients see enterprise-grade media insights from a boutique firm. We\'re able to punch above our weight because of Clipbook.',
+                'name' => 'Neil Callahan',
+                'title' => 'Founder'
+            ],
+        ];
+    @endphp
+
+    @include('partials.testimonials-section', ['testimonials' => $testimonials])
+
     @include('partials.booking-section')
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const categories = ['news', 'social', 'policy', 'broadcasts', 'podcasts', 'newsletters'];
-            const images = {
-                'news': 'https://framerusercontent.com/images/5XE6Em1yp20CQamkzQEcwb1DFzU.png?scale-down-to=1024',
-                'social': 'https://framerusercontent.com/images/yXqiDPeFWT2cIwkbhKylcuVaX0.png?scale-down-to=1024',
-                'policy': 'https://framerusercontent.com/images/Gq520mpoLjGbAXHWrH5Bpfs7s.png?scale-down-to=1024',
-                'broadcasts': 'https://framerusercontent.com/images/A8C6UEwecpNQopvPRUDKWEqV08c.png?scale-down-to=1024',
-                'podcasts': 'https://framerusercontent.com/images/47PaIaQJPmkfuEXD6AF8HtEwtw.png?scale-down-to=1024',
-                'newsletters': 'https://framerusercontent.com/images/zLdXAsoqcFKwSzysvEogJVXWyVo.png?scale-down-to=1024'
-            };
-
-            let currentIndex = 0;
-            const imageElement = document.getElementById('media-image');
-            const nextButton = document.getElementById('media-next-btn');
-            const prevButton = document.getElementById('media-prev-btn');
-            const pills = document.querySelectorAll('.category-pill');
-
-            function updateButtonVisibility(index) {
-                const totalCategories = categories.length;
-
-                // Ẩn/hiện nút previous
-                if (index === 0) {
-                    // Category đầu tiên: ẩn previous
-                    prevButton.classList.add('hidden');
-                } else {
-                    // Các category khác: hiện previous
-                    prevButton.classList.remove('hidden');
-                }
-
-                // Ẩn/hiện nút next
-                if (index === totalCategories - 1) {
-                    // Category cuối: ẩn next
-                    nextButton.classList.add('hidden');
-                } else {
-                    // Các category khác: hiện next
-                    nextButton.classList.remove('hidden');
-                }
-            }
-
-            function updateActiveCategory(index) {
-                // Remove active class from all pills
-                pills.forEach(pill => {
-                    pill.classList.remove('active');
-                    pill.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
-                    pill.classList.remove('bg-gray-800', 'text-white');
-                });
-
-                // Add active class to current pill
-                const currentPill = pills[index];
-                currentPill.classList.add('active', 'bg-gray-800', 'text-white');
-                currentPill.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-600', 'dark:text-gray-400', 'border', 'border-gray-200', 'dark:border-gray-700');
-
-                // Update image
-                const currentCategory = categories[index];
-                imageElement.style.opacity = '0';
-                setTimeout(() => {
-                    imageElement.src = images[currentCategory];
-                    imageElement.style.opacity = '1';
-                }, 150);
-
-                // Update button visibility
-                updateButtonVisibility(index);
-            }
-
-            nextButton.addEventListener('click', function () {
-                if (currentIndex < categories.length - 1) {
-                    currentIndex++;
-                    updateActiveCategory(currentIndex);
-                }
-            });
-
-            prevButton.addEventListener('click', function () {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    updateActiveCategory(currentIndex);
-                }
-            });
-
-            // Allow clicking on pills directly
-            pills.forEach((pill, index) => {
-                pill.addEventListener('click', function () {
-                    currentIndex = index;
-                    updateActiveCategory(currentIndex);
-                });
-            });
-
-            // Initialize button visibility
-            updateButtonVisibility(0);
-        });
-
-        // Testimonials slider (slide 1 card at a time with animation, looped)
-        document.addEventListener('DOMContentLoaded', function () {
-            const cards = Array.from(document.querySelectorAll('.testimonial-card'));
-            const prevBtn = document.getElementById('testimonial-prev');
-            const nextBtn = document.getElementById('testimonial-next');
-
-            if (!cards.length || !prevBtn || !nextBtn) return;
-
-            let startIndex = 0; // index card đầu tiên đang hiển thị
-            let direction = 1; // 1: next (left), -1: prev (right)
-
-            function getPerView() {
-                if (window.innerWidth >= 1280) return 5; // xl: 5 cards
-                if (window.innerWidth >= 768) return 3;  // md: 3 cards
-                return 1;                                // mobile: 1 card
-            }
-
-            function animateVisible() {
-                const perView = getPerView();
-                const total = cards.length;
-                if (total <= perView) {
-                    // Nếu số card ít hơn hoặc bằng perView thì hiển thị tất cả, không trượt
-                    cards.forEach(card => {
-                        card.classList.remove('hidden');
-                        card.style.opacity = '1';
-                        card.style.transform = 'translateX(0)';
-                        card.style.transition = 'none';
-                    });
-                    return;
-                }
-
-                // Chuẩn hóa startIndex để luôn nằm trong 0..total-1
-                startIndex = ((startIndex % total) + total) % total;
-
-                cards.forEach((card, index) => {
-                    // Tính khoảng cách tuần hoàn từ startIndex
-                    const offset = (index - startIndex + total) % total;
-                    const visible = offset < perView;
-
-                    if (visible) {
-                        card.classList.remove('hidden');
-                        // reset for animation
-                        card.style.opacity = '0';
-                        card.style.transform = `translateX(${direction * 40}px)`;
-                        requestAnimationFrame(() => {
-                            card.style.transition = 'transform 0.4s ease-out, opacity 0.4s ease-out';
-                            card.style.opacity = '1';
-                            card.style.transform = 'translateX(0)';
-                        });
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-            }
-
-            prevBtn.addEventListener('click', function () {
-                direction = -1;
-                startIndex -= 1; // trượt lùi 1 card
-                animateVisible();
-            });
-
-            nextBtn.addEventListener('click', function () {
-                direction = 1;
-                startIndex += 1; // trượt tới 1 card
-                animateVisible();
-            });
-
-            window.addEventListener('resize', animateVisible);
-            animateVisible();
-        });
-
-        // Customer hero slider (center slide with blurred side slides, looped)
-        document.addEventListener('DOMContentLoaded', function () {
-            const slides = Array.from(document.querySelectorAll('.customer-slide'));
-            const prev = document.getElementById('customer-prev');
-            const next = document.getElementById('customer-next');
-
-            if (!slides.length || !prev || !next) return;
-
-            let current = 0;
-
-            function updateCustomerSlider() {
-                const total = slides.length;
-
-                slides.forEach((slide, index) => {
-                    // Khoảng cách tuần hoàn từ slide hiện tại
-                    const offset = (index - current + total) % total;
-
-                    slide.style.zIndex = '0';
-
-                    if (offset === 0) {
-                        // Slide trung tâm
-                        slide.style.opacity = '1';
-                        slide.style.transform = 'translateX(0) scale(1)';
-                        slide.style.filter = 'blur(0px)';
-                        slide.style.zIndex = '20';
-                    } else if (offset === 1 || offset === total - 1) {
-                        // Hai slide hai bên
-                        const sideDirection = offset === 1 ? 1 : -1;
-                        slide.style.opacity = '0.35';
-                        slide.style.transform = `translateX(${sideDirection * 160}px) scale(0.9)`;
-                        slide.style.filter = 'blur(1px)';
-                        slide.style.zIndex = '10';
-                    } else {
-                        // Các slide còn lại ẩn đi
-                        slide.style.opacity = '0';
-                        slide.style.transform = 'translateX(0) scale(0.9)';
-                        slide.style.filter = 'blur(0px)';
-                    }
-                });
-            }
-
-            next.addEventListener('click', function () {
-                current = (current + 1) % slides.length;
-                updateCustomerSlider();
-            });
-
-            prev.addEventListener('click', function () {
-                current = (current - 1 + slides.length) % slides.length;
-                updateCustomerSlider();
-            });
-
-            updateCustomerSlider();
-        });
-
-        // Reporting Section Carousel
-        document.addEventListener('DOMContentLoaded', function () {
-            const reportingImages = [
-                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
-                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056',
-                'https://framerusercontent.com/images/oEFlkGZtdOMSevaNvE0TaVBjSUI.png?scale-down-to=2048&width=2144&height=2056'
-            ];
-
-            let reportingCurrentIndex = 0;
-            const reportingImageElement = document.getElementById('reporting-image');
-            const reportingNextButton = document.getElementById('reporting-next-btn');
-            const reportingPrevButton = document.getElementById('reporting-prev-btn');
-
-            function updateReportingButtonVisibility(index) {
-                const totalImages = reportingImages.length;
-
-                // Ẩn/hiện nút previous
-                if (index === 0) {
-                    reportingPrevButton.classList.add('hidden');
-                } else {
-                    reportingPrevButton.classList.remove('hidden');
-                }
-
-                // Ẩn/hiện nút next
-                if (index === totalImages - 1) {
-                    reportingNextButton.classList.add('hidden');
-                } else {
-                    reportingNextButton.classList.remove('hidden');
-                }
-            }
-
-            function updateReportingImage(index) {
-                reportingImageElement.style.opacity = '0';
-                setTimeout(() => {
-                    reportingImageElement.src = reportingImages[index];
-                    reportingImageElement.style.opacity = '1';
-                }, 150);
-                updateReportingButtonVisibility(index);
-            }
-
-            reportingNextButton.addEventListener('click', function () {
-                if (reportingCurrentIndex < reportingImages.length - 1) {
-                    reportingCurrentIndex++;
-                    updateReportingImage(reportingCurrentIndex);
-                }
-            });
-
-            reportingPrevButton.addEventListener('click', function () {
-                if (reportingCurrentIndex > 0) {
-                    reportingCurrentIndex--;
-                    updateReportingImage(reportingCurrentIndex);
-                }
-            });
-
-            // Initialize button visibility
-            updateReportingButtonVisibility(0);
-        });
-
-        // Analysis Section Carousel
-        document.addEventListener('DOMContentLoaded', function () {
-            const analysisImages = [
-                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
-                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
-                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
-                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120',
-                'https://framerusercontent.com/images/U7Nv6cBvFakhRL3beiq5Ziwno0I.png?width=2564&height=2120'
-            ];
-
-            let analysisCurrentIndex = 0;
-            const analysisImageElement = document.getElementById('analysis-image');
-            const analysisNextButton = document.getElementById('analysis-next-btn');
-            const analysisPrevButton = document.getElementById('analysis-prev-btn');
-
-            function updateAnalysisImage(index) {
-                analysisImageElement.style.opacity = '0';
-                setTimeout(() => {
-                    analysisImageElement.src = analysisImages[index];
-                    analysisImageElement.style.opacity = '1';
-                }, 150);
-            }
-
-            // Luôn hiển thị cả 2 nút
-            analysisPrevButton.classList.remove('hidden');
-            analysisNextButton.classList.remove('hidden');
-
-            analysisNextButton.addEventListener('click', function () {
-                analysisCurrentIndex = (analysisCurrentIndex + 1) % analysisImages.length;
-                updateAnalysisImage(analysisCurrentIndex);
-            });
-
-            analysisPrevButton.addEventListener('click', function () {
-                analysisCurrentIndex = (analysisCurrentIndex - 1 + analysisImages.length) % analysisImages.length;
-                updateAnalysisImage(analysisCurrentIndex);
-            });
-        });
-    </script>
-
 @endsection
 
+@push('scripts')
+    <script src="{{ asset('js/home.js') }}"></script>
+@endpush
