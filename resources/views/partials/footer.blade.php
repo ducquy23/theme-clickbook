@@ -3,6 +3,7 @@
     <div class="relative z-20">
         @include('partials.book-time')
     </div>
+@endif
 @if (!request()->routeIs('home') && !request()->routeIs('webinars'))
     @include('partials.announcement-bar')
 @endif
