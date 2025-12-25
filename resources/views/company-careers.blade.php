@@ -6,7 +6,9 @@
         <div class="absolute top-0 left-0 w-full h-full bg-hero-gradient opacity-60 pointer-events-none"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl">
-                <span class="text-sm font-semibold text-lime-400 tracking-wide uppercase mb-4 block">Company &amp; Careers</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400 text-sm font-semibold tracking-wide uppercase mb-4 block hover:underline">
+                    Company & Careers
+                </span>
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-8 text-gray-900 dark:text-white">
                     Clipbook is the lens through which leaders
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400">
@@ -25,7 +27,7 @@
                     </div>
                     <div>
                         <p class="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1">Clients</p>
-                        <p class="text-3xl font-light text-lime-400">250+</p>
+                        <p class="text-3xl font-light text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400">250+</p>
                     </div>
                 </div>
             </div>
@@ -36,7 +38,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
                 <div class="lg:col-span-1">
-                    <h2 class="text-sm font-semibold text-lime-400 uppercase tracking-wide">Our Vision</h2>
+                    <h2 class="text-sm font-light text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-lime-400 uppercase tracking-wide">Our Vision</h2>
                 </div>
                 <div class="lg:col-span-3">
                     <p class="text-xl md:text-2xl font-medium leading-relaxed text-gray-700 dark:text-gray-200">
@@ -212,7 +214,7 @@
                         <img
                             alt="Smiling professional man in white shirt"
                             class="w-full h-full object-cover"
-                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXgPzjgZgcwdnp4HmMFpC2qa_lpmybesVB9lpJEtl8InUvvv0Nf75JALU2Qpc2Ef9nTrD14M2aQjEddYd-bkhIH1zYsHUDQ-TGB3c2TUgLLuG84M7PBMbkzNFLImaOlRH0q9OI958DFHSEFM9VWy_jwD0DpLdvDt3_rjN-kX-OFWaUZR3UC1ajPxWviD32Yj48id5FeeTQohz0q2XtYDznZPcfvUUPs0cXOn4elSyfZoc3WZ-ZEwPvJOhZl2IF1BcnXhXkVjbzIMw"
+                            src="https://framerusercontent.com/images/0d9Yi9grFbgesep3KfhhOyFUyU.webp?scale-down-to=512&width=2000&height=1333"
                         />
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     </div>
@@ -229,13 +231,11 @@
                 </div>
                 <div class="bg-white dark:bg-surface-dark rounded-xl overflow-hidden border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
                     <div class="h-48 bg-gray-100 dark:bg-gray-200 flex items-center justify-center relative">
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-black text-white flex items-center justify-center font-bold text-xl">AP</div>
-                            <div class="flex flex-col">
-                                <span class="text-black font-bold text-sm tracking-tight uppercase">ASSOCIATED PRESS</span>
-                                <div class="h-0.5 w-full bg-black mt-1"></div>
-                            </div>
-                        </div>
+                        <img
+                            alt="Smiling professional man in white shirt"
+                            class="w-full h-full object-cover"
+                            src="https://framerusercontent.com/images/tK5V4cc4ti1dXQx6DRGvIodWh5Y.png?scale-down-to=512&width=1440&height=810"
+                        />
                     </div>
                     <div class="p-6">
                         <h3 class="text-sm font-semibold mb-2 text-gray-900 dark:text-white">
