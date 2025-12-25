@@ -251,8 +251,6 @@
             </div>
         </div>
     </section>
-
-    @include('partials.book-time')
 @endsection
 
 
