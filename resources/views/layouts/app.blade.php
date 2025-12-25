@@ -47,8 +47,11 @@
         };
     </script>
     <style>
-        body {
+        html, body {
             font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
         }
         ::-webkit-scrollbar {
             width: 8px;

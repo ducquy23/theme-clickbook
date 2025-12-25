@@ -2,7 +2,7 @@
 
 @section('content')
     <!-- Hero Section -->
-    <section class="relative pt-27 pb-20 overflow-hidden">
+    <section class="relative pt-27 pb-20 overflow-hidden overflow-x-hidden">
         <div
             class="absolute inset-0 z-0 opacity-[0.03] dark:opacity-[0.15] pointer-events-none bg-grid-pattern bg-grid"></div>
         <div
@@ -60,9 +60,9 @@
                                         <div class="framer-58avS framer-1c6ph31"
                                              style="--1df8v9o: rgb(255, 255, 255); transform: translate(-50%, -50%) scale(1.0828, 1.0828) scale(1, 1); transform-origin: 50% 50% 0px;"></div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -70,7 +70,7 @@
     </section>
 
     <!-- Trusted By Section -->
-    <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20">
+    <section class="py-12 border-y border-gray-200 dark:border-gray-800 bg-white dark:bg-black/20 overflow-x-hidden">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="flex flex-col md:flex-row justify-between items-center mb-10 px-4 text-base">
                 <p class="font-medium" style="color: rgb(220, 220, 220);">
@@ -115,7 +115,7 @@
     </section>
 
     <!-- Media Intelligence Section -->
-    <section id="mediaintelligence" class="relative" style="padding-top: 6rem; padding-bottom: 2rem;">
+    <section id="mediaintelligence" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden relative">
@@ -200,7 +200,7 @@
     </section>
 
     <!-- Reporting Section -->
-    <section id="reporting" class="relative" style="padding-top: 6rem; padding-bottom: 2rem;">
+    <section id="reporting" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
@@ -261,7 +261,7 @@
     </section>
 
     <!-- Analysis Section -->
-    <section id="analysis" class="relative" style="padding-top: 6rem; padding-bottom: 2rem;">
+    <section id="analysis" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 lg:gap-20 items-center overflow-hidden">
@@ -314,13 +314,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                                </div>
+                                </div>
+                            </div>
     </section>
 
     <!-- Database Section -->
-    <section id="database" class="relative" style="padding-top: 6rem; padding-bottom: 2rem;">
+    <section id="database" class="relative overflow-x-hidden" style="padding-top: 6rem; padding-bottom: 2rem;">
         <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
                 class="bg-gray-100 dark:bg-surface-dark border border-gray-200 dark:border-gray-800 rounded-3xl p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row-reverse gap-12 lg:gap-20 items-center overflow-hidden">
@@ -339,7 +339,7 @@
                        href="#">
                         Learn More
                     </a>
-                </div>
+                                </div>
                 <div class="flex-1 w-full relative">
                     <div
                         class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-blue-500/20 blur-[80px] rounded-full"></div>
@@ -349,14 +349,14 @@
                             alt="Database preview"
                             class="w-full h-full object-cover"
                         />
-                    </div>
-                </div>
-            </div>
-        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
     </section>
 
     <!-- Customer Section -->
-    <section class="py-24">
+    <section class="py-24 overflow-x-hidden">
         <div class="w-full px-4 sm:px-8 lg:px-16">
             <div class="text-center mb-12 max-w-screen-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Our customers</h2>
@@ -364,7 +364,7 @@
                     Clipbook is the leading AI research and analysis platform for communications and public affairs
                     teams.
                 </p>
-            </div>
+                        </div>
 
             <div class="relative max-w-screen-2xl mx-auto">
                 <div class="relative mx-auto w-full max-w-[800px] h-[280px] sm:h-[320px] md:h-[360px] lg:h-[440px]" style="max-width: 800px;">
@@ -400,7 +400,7 @@
                                     class="w-full h-full object-contain"
                                 />
                             </div>
-                        </div>
+                                </div>
 
                         <!-- Slide 2 -->
                         <div
@@ -413,7 +413,7 @@
                                     class="w-full h-full object-contain"
                                 />
                             </div>
-                        </div>
+                                </div>
 
                         <!-- Slide 3 -->
                         <div
@@ -434,7 +434,7 @@
     </section>
 
     <!-- What our customers are saying Section -->
-    <section class="py-24 bg-background-dark border-t border-gray-900">
+    <section class="py-24 bg-background-dark border-t border-gray-900 overflow-x-hidden">
         <div class="w-full px-4 sm:px-8 lg:px-16">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-white mb-4">What our customers are saying</h2>
