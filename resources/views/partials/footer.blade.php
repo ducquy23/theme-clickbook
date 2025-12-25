@@ -3,7 +3,10 @@
     <div class="relative z-20">
         @include('partials.book-time')
     </div>
+@if (!request()->routeIs('home') && !request()->routeIs('webinars'))
+    @include('partials.announcement-bar')
 @endif
+
 
 <!-- Footer -->
 <footer class="bg-background-dark text-white pt-16 pb-8 border-t border-gray-800 relative z-20">
